@@ -15,20 +15,33 @@ namespace ORM
 
         }
 
-        public Locality(string regioname, Region c)
+        public Locality(string localityname, Region r)
         {
             this.LocalityId = Guid.NewGuid();
-            this.LocalityName = regioname;
-            this.Region = c;
+            this.LocalityName = localityname;
+            this.Region = r;
 
         }
 
-        public Locality(string id, string localityname, Region c)
+        public Locality(string id, string localityname, Region r)
         {
             this.LocalityId = new Guid(id);
             this.LocalityName = localityname;
-            this.Region = c;
+            this.Region = r;
+            this.RegionId = this.Region.RegionId;
 
+        }
+
+        public Locality(string id, string localityname, DateTime dateentered, DateTime datemodified, Region r, string createdbyuserid, string modifiedbyuserid)
+        {
+            this.LocalityId = new Guid(id);
+            this.LocalityName = localityname;
+            this.DateEntered = dateentered;
+            this.DateModified = datemodified;
+            this.CreatedByUserId = new Guid(createdbyuserid);
+            this.ModifiedByUserId = new Guid(modifiedbyuserid);
+            this.Region = r;
+            this.RegionId = this.Region.RegionId;
         }
 
         [Key]
@@ -38,10 +51,20 @@ namespace ORM
         public string LocalityName { get; set; }
 
         [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateEntered { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateModified { get; set; }
+
+        [Required]
         [ForeignKey("RegionId")]
         public Region Region { get; set; }
 
         public Guid RegionId { get; set; }
+        public Guid CreatedByUserId { get; set; }
+        public Guid ModifiedByUserId { get; set; }
 
         public IEnumerable<Locality> GetAll(SIGEeLDBContext e)
         {

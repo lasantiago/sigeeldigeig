@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Country.cs" />
+    <Compile Include="InstitutionType.cs" />
     <Compile Include="Locality.cs" />
     <Compile Include="Migrations\201502041607417_initial.cs" />
     <Compile Include="Migrations\201502041607417_initial.Designer.cs">
@@ -55,8 +56,11 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Region.cs" />
+    <Compile Include="Sector.cs" />
     <Compile Include="SIGEeLDBContext.cs" />
     <Compile Include="StatePower.cs" />
+    <Compile Include="SubSector.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

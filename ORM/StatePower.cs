@@ -15,10 +15,26 @@ namespace ORM
 
         }
 
-        public StatePower (string statepowerame)
+        public StatePower(string statepowername)
         {
             this.StatePowerId = Guid.NewGuid();
-            this.StatePowerName = statepowerame;
+            this.StatePowerName = statepowername;
+        }
+
+        public StatePower(string id, string statepowername)
+        {
+            this.StatePowerId = new Guid(id);
+            this.StatePowerName = statepowername;
+        }
+
+        public StatePower(string id, string statepowername, DateTime dateentered, DateTime datemodified, string createdbyuserid, string modifiedbyuserid)
+        {
+            this.StatePowerId = new Guid(id);
+            this.StatePowerName = statepowername;
+            this.DateEntered = dateentered;
+            this.DateModified = datemodified;
+            this.CreatedByUserId = new Guid(createdbyuserid);
+            this.ModifiedByUserId = new Guid(modifiedbyuserid);
         }
 
         [Key]
@@ -26,6 +42,17 @@ namespace ORM
 
         [Required]
         public string StatePowerName { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateEntered { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateModified { get; set; }
+        public Guid CreatedByUserId { get; set; }
+        public Guid ModifiedByUserId { get; set; }
+
 
         public IEnumerable<StatePower> GetAll(SIGEeLDBContext e)
         {

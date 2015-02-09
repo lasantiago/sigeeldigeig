@@ -1,0 +1,169 @@
+namespace ORM.Migrations
+{
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+
+    internal sealed class Configuration : DbMigrationsConfiguration<ORM.SIGEeLDBContext>
+    {
+        public Configuration()
+        {
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
+        }
+
+        protected override void Seed(ORM.SIGEeLDBContext context)
+        {
+
+            #region Country
+            context.Countries.AddOrUpdate(co => co.CountryName, new Country("República Dominicana", "0e6f4647-e983-403d-af17-062dbf9021e4"));
+
+            #endregion
+
+            #region Regions
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("36538b54-ed1a-8704-7f3a-5256cfbef59d", "Altagracia", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("4270074d-5e7a-55c7-d6a3-5256cf25c071", "Azua", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("507dfd4f-0857-be81-b68b-5256cf1c670b", "Bahoruco", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("609ab191-e2f2-e550-7ca0-5256cfa9bb28", "Barahona", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("6caea519-7bec-34be-449b-5256cfe7e341", "Dajabón", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("2516e95e-8877-f720-6df7-5256cfcfeaea", "Distrito Nacional", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("78d4de14-ef8c-d5fa-24ad-5256cf6f6298", "Duarte", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("84f1f020-67c8-073a-6722-5256cf654bf6", "El Seibo", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("9102b71d-7a58-0a48-f2bd-5256cfd6257d", "Elias Piña", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("9d1f37c0-d69c-cbe6-f10b-5256cf6456db", "Espaillat", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("a92edf91-d65b-e3de-8d7e-5256cff402d6", "Hato Mayor", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("3e0a2cbf-19cf-1ada-3c6d-5256cf999f85", "Hermanas Mirabal", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("b54c3dbf-24fe-dce5-e4d5-5256cf59a811", "Independencia", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("c15af755-ed1e-0819-0eaa-5256cf67e23a", "La Romana", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("d1797b1c-6777-2d56-c60a-5256cf33e2b0", "La Vega", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("dd872718-cff6-49bf-412c-5256cf483e1e", "María Trinidad Sánchez", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("e9ae396c-b33f-f2d7-b303-5256cfdcbe98", "Monseñor Nouel", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("dae10512-80db-2c3d-f2de-5256cffac887", "Monte Plata", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("19df059d-5287-62b9-bca8-5256cffa92f9", "Montecristi", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("19c9085f-2da0-9b77-0449-5256cfa99cb8", "Pedernales", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("25db66c3-be2b-0ed5-9a6c-5256cf551dd0", "Peravia", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("31f78a39-87fc-d712-0a3c-5256cf8abd2e", "Puerto Plata", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("4a24988c-8d50-c251-2c3d-5256cfb1da60", "Samaná", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("56355c75-f9ef-a34a-568f-5256cf4257b7", "San Cristóbal", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("c721733a-ecd0-3e1a-f64f-5256cfea1c23", "San José de Ocoa", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("6252f600-694a-412a-778c-5256cf7ffc65", "San Juan de la Maguana", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("6e612a7a-5ecf-d2b4-25d1-5256cf5be2d5", "San Pedro de Macoris", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("7bb58279-70be-f9a6-c4ba-5256cf4ce4f9", "Sánchez Ramírez", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("8e9e12de-9c28-30cd-4bc5-5256cf0fc1e4", "Santiago de los Caballeros", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("9aba9d41-3d30-fd20-47c2-5256cf05bfaf", "Santiago Rodríguez", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("e740c3bf-2835-925e-4da9-5256cf73feaa", "Santo Domingo", new Country().GetCountryByName(context, "República Dominicana")));
+            context.Regions.AddOrUpdate(h => h.RegionName, new Region("a6f5174d-b955-edc7-688b-5256cf72115e", "Valverde", new Country().GetCountryByName(context, "República Dominicana")));
+
+            #endregion
+
+            #region Localities
+
+            #region Altagracia
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("ccf1e50a-e2ad-968b-0e38-5256d5ac9a12", "BAYAHIBE (DM)", new Region().GetRegionByName(context, "Altagracia")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("50ca0956-6a22-5587-c1de-5256d5e66372", "BOCA DE YUMA (DM)", new Region().GetRegionByName(context, "Altagracia")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("35731f6e-3426-6429-3664-5256d5ac1712", "HIGUEY", new Region().GetRegionByName(context, "Altagracia")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("4ab4e778-003c-3052-6f5b-5256d56b8a1b", "LA LAGUNA DE NISIBON (DM)", new Region().GetRegionByName(context, "Altagracia")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("e23ad7ec-f40e-8619-e18e-5256d5dacfeb", "LA OTRA BANDA (DM)", new Region().GetRegionByName(context, "Altagracia")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("b5ddd5fd-6d2e-6d31-7d8f-5256d5425426", "SAN RAFAEL DEL YUMA", new Region().GetRegionByName(context, "Altagracia")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("1a64e831-01af-c5ac-b2d3-5256d5ee4374", "TURISTICO VERON PUNTA CANA (DM)", new Region().GetRegionByName(context, "Altagracia")));
+            #endregion
+
+            #region Azua
+
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("5e123721-88c6-1455-768d-5256d5c07c81", "AMIAMA GOMEZ (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("7908d8d8-adc4-a512-f9e5-5256d540dc56", "AZUA", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("cfc845fb-39bd-c312-b9ef-5256d55cda29", "BARRERAS (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("309efefd-6b1a-4a41-4536-5256d5ba971b", "BARRO ARRIBA (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("7a11ece8-b4ba-444c-c27d-5256d5e43171", "DOÑA EMMA BALAGUER VDA. VALLEJO", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("c7e76f00-edbd-ac27-dcb7-5256d544ac4a", "EL ROSARIO (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("be330a95-4828-2ba7-b31a-5256d509195d", "ESTEBANIA", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("a763efd3-b385-9b39-4190-5256d5328626", "GUAYABAL", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("214105cb-cec7-0689-a8b3-5256d5dbbed1", "HATO NUEVO CORTES (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("a37fb37c-2f5e-fffa-deb4-5256d5493122", "LA SIEMBRA (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("dd656e67-ee14-79a7-1ea8-5256d59948cf", "LAS BARIAS-LA ESTANCIA (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("24ff578b-ed9a-eb89-547d-5256d594ceec", "LAS CHARCAS", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("94e2e281-23c5-f723-e302-5256d56c306d", "LAS CLAVELLINAS (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("8c6c30f4-b66c-9e1a-a96b-5256d57c98a0", "LAS LAGUNAS (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("e50ea1b0-017c-8c47-9598-5256d5a70e97", "LAS LOMAS (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("d3b0cd19-d875-98bf-c69b-5256d5a166dd", "LAS YAYAS DE VIAJAMA", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("4d9d29c6-bdd1-abaf-eab7-5256d5954b2a", "LOS FRIOS (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("57060d6d-7084-fa07-274d-5256d5740181", "LOS JOVILLOS (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("66934289-1202-7762-42af-5256d5d32525", "LOS TOROS (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("c0240002-ac38-9bef-b175-5256d5827dc4", "MONTE BONITO (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("90218ef9-c9ea-961a-fcfc-5256d5dc9ff7", "PADRE LAS CASAS", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("514bcd59-5c87-9a11-769d-5256d579b721", "PALMAR DE OCOA (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("b8b2c639-a8d1-5c41-ddeb-5256d570be5e", "PERALTA", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("978f61db-69ef-1a6c-f05c-5256d5cac365", "PROYECTO #4 (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("385bc73c-da76-660c-1c1c-5256d5ce3d11", "PROYECTO 2-C (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("b1111563-c2aa-9c92-e280-5256d5d29fb2", "PROYECTO D-1 GANADERO (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("3a3cb13a-df9b-679f-3151-5256d5b567cd", "PUEBLO VIEJO", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("648bdcf6-0bab-4fd8-d7b3-5256d5e11aeb", "PUERTO VIEJO-LOS NEGROS (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("be72eb67-65f1-be67-6c37-5256d5509d7b", "SABANA YEGUA", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("771e96db-d686-2b6c-47c2-5256d5e967b9", "TABARA ABAJO (DM)", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("eac9d6e9-5860-51fd-633b-5256d5d39e7b", "TABARA ARRIBA", new Region().GetRegionByName(context, "Azua")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("63cc260c-3dca-2cbf-aab8-5256d58bb065", "VILLARPANDO (DM)", new Region().GetRegionByName(context, "Azua")));
+            #endregion
+
+            #region Bahoruco
+
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("cc264d9e-1897-e0fc-6338-5256d5d81935", "CABEZA DE TORO (DM)", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("5819b432-cfa8-e027-9fd7-5256d584efea", "EL PALMAR (DM)", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("c1319121-0e9b-1426-3876-5256d5029468", "EL SALADO", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("b6bf91d4-dcfa-aa78-6455-5256d516271c", "GALVAN", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("6d6c47ac-5f51-5bdc-c1d2-5256d5b95a2a", "LAS CLAVELLINAS (DM)", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("2bb47106-042d-39e4-355e-5256d5359c5e", "LOS RIOS", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("aa41f963-be2e-3245-b63a-5256d51c35ce", "MENA (DM)", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("9fd19bd4-2475-7650-a0aa-5256d53419d5", "MONSERRAT (DM)", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("d689403d-7aea-8746-0ff6-5256d5f59c49", "NEYBA", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("4127bd5d-1097-701f-11a4-5256d5aedd3c", "SANTA BARBARA EL 6", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("848ffc37-854b-a0af-692a-5256d50437de", "SANTANA (DM)", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("ed771232-d84b-dbad-ce84-5256d53c413e", "TAMAYO", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("e3183a89-ae8b-454a-0004-5256d57a89a4", "UVILLA (DM)", new Region().GetRegionByName(context, "Bahoruco")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("1309bab1-b244-6e81-8045-5256d5fbd9a2", "VILLA JARAGUA", new Region().GetRegionByName(context, "Bahoruco")));
+            #endregion
+
+            #region Barahona
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("8384edee-a1a7-1988-049f-5256d5e58cfa", "ARROYO DULCE (DM)", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("b3e0bdd9-12ae-06cc-d79a-5256d5e93623", "BAHORUCO (DM)", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("44c30984-dd52-1d13-9350-5256d5e44c62", "BARAHONA", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("3df831c3-7e3c-a144-6977-5256d51318a9", "CABRAL", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("c3bd0c65-dd9f-f622-7c78-5256d58ff699", "CANOA (DM)", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("e03d0ce5-4d82-3502-2ff3-5256d526c868", "EL CACHON (DM)", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("e039f58a-8024-9dc3-47c0-5256d5c4a531", "EL PEÑON", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("36bf403d-714c-acf2-1987-5256d5754a21", "ENRIQUILLO", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("6cb500bb-ff77-077a-1f44-5256d57d7931", "FONDO NEGRO (DM)", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("7bf3c2d8-f834-1e9a-932f-5256d5ce5334", "FUNDACION", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("ea147890-6879-c312-3c41-5256d55e087a", "JAQUIMEYES", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("ae5d152e-3d31-d5cb-1cfe-5256d565c827", "LA CIENAGA", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("1f33de34-28c6-7dee-c469-5256d504f314", "LA GUAZARA (DM)", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("95b64df6-81b1-db7d-6475-5256d55b0cec", "LAS SALINAS", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("405ef1b7-67d3-b245-8ceb-5256d5c09f68", "LOS PATOS (DM)", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("9bafc79d-0137-ad92-5cb0-5256d5bde885", "PALO ALTO (DM)", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("c95b62b1-8bad-0af9-219b-5256d5e6f5d2", "PARAISO", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("2ae39979-d3d8-205f-3760-5256d58aabc5", "PESCADERIA (DM)", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("64ff5351-49f6-0581-2080-5256d5d09569", "POLO", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("573a4b9a-3645-cb57-0ef3-5256d53d943c", "QUITA CORAZA (DM)", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("4fa87dc9-23e5-e76f-42cc-5256d5830a9d", "VICENTE NOBLE", new Region().GetRegionByName(context, "Barahona")));
+            context.Localities.AddOrUpdate(h => h.LocalityName, new Locality("18db0d1c-6897-4793-1b5b-5256d53f175b", "VILLA CENTRAL", new Region().GetRegionByName(context, "Barahona")));
+
+            #endregion
+
+
+            context.SaveChanges();
+
+            //  This method will be called after migrating to the latest version.
+
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
+            //  to avoid creating duplicate seed data. E.g.
+            //
+            //    context.People.AddOrUpdate(
+            //      p => p.FullName,
+            //      new Person { FullName = "Andrew Peters" },
+            //      new Person { FullName = "Brice Lambson" },
+            //      new Person { FullName = "Rowan Miller" }
+            //    );
+            //
+        }
+    }
+}

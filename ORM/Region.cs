@@ -15,23 +15,36 @@ namespace ORM
 
         }
 
-        public Region(string regioname, Country c)
+        public Region(string regionname, Country c)
         {
             this.RegionId = Guid.NewGuid();
-            this.RegionName = regioname;
-            this.Country = c;
-            this.CountryId = this.Country.CountryId;
-
+            this.RegionName = regionname;
+            this.DateEntered = DateTime.Now;
+            this.DateModified = DateTime.Now;
         }
 
-        public Region(string id, string regioname, Country c)
+        public Region(string id, string regioname, DateTime dateentered, DateTime datemodified, Country c)
         {
             this.RegionId = new Guid(id);
             this.RegionName = regioname;
+            this.DateEntered = dateentered;
+            this.DateModified = datemodified;
             this.Country = c;
             this.CountryId = this.Country.CountryId;
-
         }
+
+        public Region(string id, string regionname, DateTime dateentered, DateTime datemodified, Country c, string createdbyuserid, string modifiedbyuserid)
+        {
+            this.RegionId = new Guid(id);
+            this.RegionName = regionname;
+            this.DateEntered = dateentered;
+            this.DateModified = datemodified;
+            this.CreatedByUserId = new Guid(createdbyuserid);
+            this.ModifiedByUserId = new Guid(modifiedbyuserid);
+            this.Country = c;
+            this.CountryId = this.Country.CountryId;
+        }
+
         [Key]
         public Guid RegionId { get; set; }
 
@@ -39,10 +52,21 @@ namespace ORM
         public string RegionName { get; set; }
 
         [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateEntered { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateModified { get; set; }
+
+        [Required]
         [ForeignKey("CountryId")]
         public Country Country { get; set; }
 
         public Guid CountryId { get; set; }
+
+        public Guid CreatedByUserId { get; set; }
+        public Guid ModifiedByUserId { get; set; }
 
         public IEnumerable<Region> GetAll(SIGEeLDBContext e)
         {
