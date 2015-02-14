@@ -5,6 +5,9 @@ using System.Linq;
 
 namespace ORM.DC_Maestros
 {
+    /// <summary>
+    /// Categorización de las instituciones en relación a los sectores temáticos. Ej.: Agua, Economía, Salud, entre otros.
+    /// </summary>
     public class Sector
     {
         [Key]

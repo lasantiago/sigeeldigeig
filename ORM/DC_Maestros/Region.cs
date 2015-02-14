@@ -6,6 +6,9 @@ using System.Linq;
 
 namespace ORM.DC_Maestros
 {
+    /// <summary>
+    /// Entidades subnacionales del Estado.
+    /// </summary>
     public class Region
     {
         [Key]

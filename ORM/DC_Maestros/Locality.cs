@@ -6,6 +6,9 @@ using System.Linq;
 
 namespace ORM.DC_Maestros
 {
+    /// <summary>
+    /// Entidades administrativas que puede agrupar una sola localidad o varias, que puede hacer referencia a una ciudad, pueblo o aldea.
+    /// </summary>
     public class Locality
     {
         [Key]

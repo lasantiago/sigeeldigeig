@@ -5,6 +5,9 @@ using System.Linq;
 
 namespace ORM.DC_Maestros
 {
+    /// <summary>
+    /// Sub-categorización de las instituciones en relación a los sectores temáticos
+    /// </summary>
     public class SubSector
     {
         [Key]

@@ -5,18 +5,24 @@ using System.Linq;
 
 namespace ORM.DC_Maestros
 {
+    /// <summary>
+    /// Categorización de las instituciones en relación a su tipo. Ej.: Ministerios, Direcciones, Departamentos, Consejos, entre otros.
+    /// </summary>
     public class InstitutionType
     {
+        [Required]
         [Key]
         public Guid InstitutionTypeId { get; set; }
 
-        [Required]
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "InstitutionTypeNameRequiredError")]
         [DataType(DataType.Text)]
-        [MaxLength(50)]
+        [Display(Name = "Name", ResourceType = typeof(Localization.es_DO), Description = "InstitutionTypeNameDescription")]
+        [StringLength(50, MinimumLength = 4, ErrorMessageResourceType = typeof(@Localization.es_DO), ErrorMessageResourceName = "InstitutionTypeNameLengthError")]
         public string InstitutionTypeName { get; set; }
 
         [Required]
         [DataType(DataType.DateTime)]
+        [Display(Name = "BirthDate", ResourceType = typeof(@Localization.es_DO), Description = "BirthDateDescription")]
         public DateTime DateEntered { get; set; }
 
         [Required]

@@ -6,6 +6,9 @@ using System.Linq;
 
 namespace ORM.DC_Maestros
 {
+    /// <summary>
+    /// Es el listado primario centralizado de todas las instituciones públicas del Estado Dominicano.
+    /// </summary>
     public class Institution
     {
         [Key]

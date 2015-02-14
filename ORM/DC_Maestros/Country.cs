@@ -5,6 +5,9 @@ using System.Linq;
 
 namespace ORM.DC_Maestros
 {
+    /// <summary>
+    /// Área geográfica bien delimitada, y una entidad políticamente independiente, con su propio gobierno, administración, leyes, y la mayor parte de las veces una constitución, una fuerza policial, fuerzas armadas, leyes tributarias, y un grupo humano.
+    /// </summary>
     public class Country
     {
 

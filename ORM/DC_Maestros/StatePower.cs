@@ -5,6 +5,9 @@ using System.Linq;
 
 namespace ORM.DC_Maestros
 {
+    /// <summary>
+    /// Ejecutivo, Legislativo, Judicial, Constitucional, etc...
+    /// </summary>
     public class StatePower
     {
         [Key]

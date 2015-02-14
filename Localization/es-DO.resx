@@ -1,0 +1,2100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>¿Quiénes somos?</value>
+  </data>
+  <data name="AboutDIGEIG" xml:space="preserve">
+    <value>Sobre la Institución</value>
+  </data>
+  <data name="Access" xml:space="preserve">
+    <value>Acceso a la Información</value>
+  </data>
+  <data name="Actions_BackToList" xml:space="preserve">
+    <value>Volver a la lista</value>
+  </data>
+  <data name="Actions_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Actions_Choose" xml:space="preserve">
+    <value>Acción</value>
+  </data>
+  <data name="Actions_Create" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="Actions_Details" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="Actions_Save" xml:space="preserve">
+    <value>Guardar cambios</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="AdvicePublicOfficers" xml:space="preserve">
+    <value>Asesoría Servidores Públicos</value>
+  </data>
+  <data name="Areas" xml:space="preserve">
+    <value>Áreas sustantivas</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="Ethics" xml:space="preserve">
+    <value>Promoción de Ética e Integridad</value>
+  </data>
+  <data name="EthicsCode" xml:space="preserve">
+    <value>Código de Pautas Éticas</value>
+  </data>
+  <data name="EthicsComissions" xml:space="preserve">
+    <value>Comisiones de Ética</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Preguntas Frecuentes</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="Institution" xml:space="preserve">
+    <value>Institución</value>
+  </data>
+  <data name="InstitutionAcronym" xml:space="preserve">
+    <value>DIGEIG</value>
+  </data>
+  <data name="InstitutionAddress" xml:space="preserve">
+    <value>Calle Moíses García No. 9 Esq. Galván, Gazcue, Santo Domingo, D.N. República Dominicana, Tel.: (809) 685-7135 - Fax: (809) 682-7863</value>
+  </data>
+  <data name="InstitutionAddressLengthError" xml:space="preserve">
+    <value>La dirección de la institución no puede ser menor de 10 ni mayor de 150 caracteres</value>
+  </data>
+  <data name="InstitutionAddressRequiredError" xml:space="preserve">
+    <value>La dirección de la institución es requerida</value>
+  </data>
+  <data name="InstitutionDescription" xml:space="preserve">
+    <value>Institución pública</value>
+  </data>
+  <data name="InstitutionEmailDescription" xml:space="preserve">
+    <value>Correo electrónico de la institución</value>
+  </data>
+  <data name="InstitutionEmailLengthError" xml:space="preserve">
+    <value>El correo electrónico de la institución no  puede ser menor de 10 ni mayor de  50 caracteres</value>
+  </data>
+  <data name="InstitutionEmailRequiredError" xml:space="preserve">
+    <value>El correo electrónico de la institución es requerido</value>
+  </data>
+  <data name="InstitutionName" xml:space="preserve">
+    <value>Dirección General de Ética e Integridad Gubernamental</value>
+  </data>
+  <data name="InstitutionNameDescription" xml:space="preserve">
+    <value>Nombre de la institución</value>
+  </data>
+  <data name="InstitutionNameLengthError" xml:space="preserve">
+    <value>El nombre de la institución no puede ser menor de 10 ni mayor de 100 caractere</value>
+  </data>
+  <data name="InstitutionNameRequiredError" xml:space="preserve">
+    <value>El nombre de la institución es requerido</value>
+  </data>
+  <data name="InstitutionRequiredError" xml:space="preserve">
+    <value>La institución es requerida</value>
+  </data>
+  <data name="Institutions" xml:space="preserve">
+    <value>Instituciones</value>
+  </data>
+  <data name="InstitutionSectorRequiredError" xml:space="preserve">
+    <value>El sector es requerido</value>
+  </data>
+  <data name="InstitutionUrlLengthError" xml:space="preserve">
+    <value>La dirección web de la institución no puede ser menor de 10 ni mayor de 100 caracteres</value>
+  </data>
+  <data name="IntegritySystems" xml:space="preserve">
+    <value>Sistemas de Integridad</value>
+  </data>
+  <data name="Investigation" xml:space="preserve">
+    <value>Investigación y Seguimiento</value>
+  </data>
+  <data name="IsCEPMember" xml:space="preserve">
+    <value>¿Es miembro del Comité de Ética Pública?</value>
+  </data>
+  <data name="IsCEPMemberDescription" xml:space="preserve">
+    <value>¿Es miembro del Comité de Ética Pública?</value>
+  </data>
+  <data name="IsCEPMemberRequiredError" xml:space="preserve">
+    <value>Debe responder si el servidor público es miembro del Comité de Ética Pública o no</value>
+  </data>
+  <data name="ShouldPubliclyDeclareAssets" xml:space="preserve">
+    <value>¿Debe el servidor realizar declaración pública de bienes?</value>
+  </data>
+  <data name="ShouldPubliclyDeclareAssetsDescription" xml:space="preserve">
+    <value>¿Debe el servidor realizar declaración pública de bienes?</value>
+  </data>
+  <data name="ShouldPubliclyDeclareAssetsRequiredError" xml:space="preserve">
+    <value>Debe responder si el servidor debe realizar declaración pública de bienes o no</value>
+  </data>
+  <data name="IsRAI" xml:space="preserve">
+    <value>¿Es responsable de acceso a la información?</value>
+  </data>
+  <data name="IsRAIDescription" xml:space="preserve">
+    <value>¿Es responsable de acceso a la información?</value>
+  </data>
+  <data name="IsRAIRequiredError" xml:space="preserve">
+    <value>Debe responder si el servidor público es responsable de acceso a la información o no</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Enlaces</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Extranet</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="OAIDirectory" xml:space="preserve">
+    <value>Directorio de Oficinas de Acceso a la Información</value>
+  </data>
+  <data name="PrivacyStatement" xml:space="preserve">
+    <value>Declaración de Privacidad</value>
+  </data>
+  <data name="Publications" xml:space="preserve">
+    <value>Publicaciones</value>
+  </data>
+  <data name="PublicServant" xml:space="preserve">
+    <value>Servidor público</value>
+  </data>
+  <data name="PublicServants" xml:space="preserve">
+    <value>Servidores públicos</value>
+  </data>
+  <data name="Sector" xml:space="preserve">
+    <value>Sector</value>
+  </data>
+  <data name="SectorNameDescription" xml:space="preserve">
+    <value>Nombre del sector</value>
+  </data>
+  <data name="SectorNameRequiredError" xml:space="preserve">
+    <value>El nombre del sector es requerido</value>
+  </data>
+  <data name="SectorRequiredError" xml:space="preserve">
+    <value>El sector es requerido</value>
+  </data>
+  <data name="Sectors" xml:space="preserve">
+    <value>Sectores</value>
+  </data>
+  <data name="ServantEmailDescription" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="ServantEmailLengthError" xml:space="preserve">
+    <value>El correo electrónico del servidor público no puede ser menor de 10 ni mayor de  50 caracteres</value>
+  </data>
+  <data name="ServantEmailRequiredError" xml:space="preserve">
+    <value>El Correo electrónico es requerido</value>
+  </data>
+  <data name="ServantLastNameDescription" xml:space="preserve">
+    <value>Apellido del servidor público</value>
+  </data>
+  <data name="ServantLastNameLengthError" xml:space="preserve">
+    <value>El apellido del servidor público no puede ser menor de 2 ni mayor de 30 caracteres</value>
+  </data>
+  <data name="ServantLastNameRequiredError" xml:space="preserve">
+    <value>El apellido del servidor público es requerido</value>
+  </data>
+  <data name="ServantNameDescription" xml:space="preserve">
+    <value>Nombre del servidor público</value>
+  </data>
+  <data name="ServantNameLengthError" xml:space="preserve">
+    <value>El nombre del servidor público no puede ser menor de 2 ni mayor de 30 caracteres</value>
+  </data>
+  <data name="ServantNameRequiredError" xml:space="preserve">
+    <value>El nombre del servidor público es requerido</value>
+  </data>
+  <data name="ServantPosition" xml:space="preserve">
+    <value>Cargo</value>
+  </data>
+  <data name="ServantPositionDescription" xml:space="preserve">
+    <value>Cargo</value>
+  </data>
+  <data name="ServantPositionLengthError" xml:space="preserve">
+    <value>El cargo no puede ser menor a 5 ni mayor de 50 caracteres</value>
+  </data>
+  <data name="ServantPositionRequiredError" xml:space="preserve">
+    <value>El cargo es requerido</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Servicios</value>
+  </data>
+  <data name="TermsOfUse" xml:space="preserve">
+    <value>Términos de uso y su aceptación</value>
+  </data>
+  <data name="Transparency" xml:space="preserve">
+    <value>Transparencia Gubernamental</value>
+  </data>
+  <data name="TransparencyDIGEIG" xml:space="preserve">
+    <value>Transparencia</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Dirección Web</value>
+  </data>
+  <data name="UrlDescription" xml:space="preserve">
+    <value>Dirección web de la institución</value>
+  </data>
+  <data name="UrlRequiredError" xml:space="preserve">
+    <value>La dirección web de la institución es requerido</value>
+  </data>
+  <data name="SectorNameLengthError" xml:space="preserve">
+    <value>El nombre del sector no puede ser menor de 4 ni mayor de 40 caracteres</value>
+  </data>
+  <data name="Actions_Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Article" xml:space="preserve">
+    <value>Publicación</value>
+  </data>
+  <data name="ArticlePublishDate" xml:space="preserve">
+    <value>Fecha de Publicación</value>
+  </data>
+  <data name="ArticlePublishDateDescription" xml:space="preserve">
+    <value>Fecha de Publicación</value>
+  </data>
+  <data name="ArticlePublishDateRequiredError" xml:space="preserve">
+    <value>La Fecha de Publicación es requerida</value>
+  </data>
+  <data name="ArticlePublishDateText" xml:space="preserve">
+    <value>Publicado el: </value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Publicaciones</value>
+  </data>
+  <data name="ArticleText" xml:space="preserve">
+    <value>Texto del artículo</value>
+  </data>
+  <data name="ArticleTextDescription" xml:space="preserve">
+    <value>Texto del artículo</value>
+  </data>
+  <data name="ArticleTextLengthError" xml:space="preserve">
+    <value>El texto del artículo debe tener un mínimo de 50 y un máximo de 6000 caracteres</value>
+  </data>
+  <data name="ArticleTextRequiredError" xml:space="preserve">
+    <value>El texto del artículo es requerido</value>
+  </data>
+  <data name="ArticleTitle" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="ArticleTitleDescription" xml:space="preserve">
+    <value>Título del artículo</value>
+  </data>
+  <data name="ArticleTitleLengthError" xml:space="preserve">
+    <value>El título del artículo no puede ser menor a 10 ni mayor de 150 caracteres</value>
+  </data>
+  <data name="ArticleTitleRequiredError" xml:space="preserve">
+    <value>El título del artículo es requerido</value>
+  </data>
+  <data name="Actions_Delete" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="DoesOAIShareSpaceWithOtherOffice" xml:space="preserve">
+    <value>¿La OAI/OAIM comparte espacio con otra área?</value>
+  </data>
+  <data name="DoesOAIShareSpaceWithOtherOfficeDescription" xml:space="preserve">
+    <value>¿La OAI/OAIM comparte espacio con otra área?</value>
+  </data>
+  <data name="DoesOAIShareSpaceWithOtherOfficeRequiredError" xml:space="preserve">
+    <value>Debe señalar si la OAI/OAIM comparte espacio con otra área</value>
+  </data>
+  <data name="DoesRAIBelongToAdministrativeCareer" xml:space="preserve">
+    <value>¿Está incorporado el RAI a la Carrera Administrativa?</value>
+  </data>
+  <data name="DoesRAIBelongToAdministrativeCareerDescription" xml:space="preserve">
+    <value>¿Está incorporado el RAI a la Carrera Administrativa?</value>
+  </data>
+  <data name="DoesRAIBelongToAdministrativeCareerRequiredError" xml:space="preserve">
+    <value>Debe señarlar si está incorporado el RAI a la Carrera Administrativa</value>
+  </data>
+  <data name="DoesRAIBelongToRAIOAINetwork" xml:space="preserve">
+    <value>¿Pertenece el RAI a la Red RAI-OAI?</value>
+  </data>
+  <data name="DoesRAIBelongToRAIOAINetworkDescription" xml:space="preserve">
+    <value>¿Pertenece el RAI a la Red RAI-OAI?</value>
+  </data>
+  <data name="DoesRAIBelongToRAIOAINetworkRequiredError" xml:space="preserve">
+    <value>Debe señalar si el RAI pertenece a la Red RAI-OAI</value>
+  </data>
+  <data name="DoesRAIHaveOtherDuties" xml:space="preserve">
+    <value>¿Tiene el RAI otras funciones?</value>
+  </data>
+  <data name="DoesRAIHaveOtherDutiesDescription" xml:space="preserve">
+    <value>¿Tiene el RAI otras funciones?</value>
+  </data>
+  <data name="DoesRAIHaveOtherDutiesRequiredError" xml:space="preserve">
+    <value>Debe señalar si el RAI tiene otras funciones</value>
+  </data>
+  <data name="HasDoneInformationAccessWorkshops" xml:space="preserve">
+    <value>¿Su institución ha realizado talleres de sensibilización sobre Acceso a la Información Pública dirigido a los funcionarios y empleados?</value>
+  </data>
+  <data name="HasDoneInformationAccessWorkshopsDescription" xml:space="preserve">
+    <value>¿Su institución ha realizado talleres de sensibilización sobre Acceso a la Información Pública dirigido a los funcionarios y empleados?</value>
+  </data>
+  <data name="HasDoneInformationAccessWorkshopsRequiredError" xml:space="preserve">
+    <value>Es necesario señalar si la institución ha realizado talleres de sensibilización sobre Acceso a la Información Pública</value>
+  </data>
+  <data name="HasRaiParticipatedInInformationAccessWorkshops" xml:space="preserve">
+    <value>¿Ha participado el RAI en talleres de capacitación?</value>
+  </data>
+  <data name="HasRaiParticipatedInInformationAccessWorkshopsDescription" xml:space="preserve">
+    <value>¿Ha participado el RAI en talleres de capacitación?</value>
+  </data>
+  <data name="HasRaiParticipatedInInformationAccessWorkshopsRequiredError" xml:space="preserve">
+    <value>Debe señalar si el RAI ha participado en talleres de capacitación</value>
+  </data>
+  <data name="IsOAIProperlyIdentified" xml:space="preserve">
+    <value>¿Está la OAI señalizada apropiadamente?</value>
+  </data>
+  <data name="IsOAIProperlyIdentifiedDescription" xml:space="preserve">
+    <value>¿Está la OAI señalizada apropiadamente?</value>
+  </data>
+  <data name="IsOAIProperlyIdentifiedRequiredError" xml:space="preserve">
+    <value>Debe señalar si la OAI estás señalizada apropiadamente</value>
+  </data>
+  <data name="WasAMemoAboutTheOAISent" xml:space="preserve">
+    <value>¿Se hizo de conocimiento a toda la institución la existencia de la OAI?</value>
+  </data>
+  <data name="WasAMemoAboutTheOAISentDescription" xml:space="preserve">
+    <value>¿Se hizo de conocimiento a toda la institución la existencia de la OAI?</value>
+  </data>
+  <data name="WasAMemoAboutTheOAISentRequiredError" xml:space="preserve">
+    <value>Debe señalar si se hizo de conocimiento a toda la institución la existencia de la OAI</value>
+  </data>
+  <data name="InformationAccessOffices" xml:space="preserve">
+    <value>Oficinas de Acceso a la Información Pública</value>
+  </data>
+  <data name="PublicServantRequiredError" xml:space="preserve">
+    <value>Es necesario identificar el Responsable de Acceso a la Información Pública</value>
+  </data>
+  <data name="HasPublicEthicsCommittee" xml:space="preserve">
+    <value>¿Posee la institución Comité de Ética?</value>
+  </data>
+  <data name="HasPublicEthicsCommitteeDescription" xml:space="preserve">
+    <value>¿Posee la institución Comité de Ética?</value>
+  </data>
+  <data name="HasPublicEthicsCommitteeRequiredError" xml:space="preserve">
+    <value>Debe señalar si la institución posee Comité de Ética</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="HasInformationAccessOffice" xml:space="preserve">
+    <value>¿Tiene oficina de acceso a la información?</value>
+  </data>
+  <data name="HasInformationAccessOfficeRequiredError" xml:space="preserve">
+    <value>Debe señalar si la institución posee una oficina de acceso a la información</value>
+  </data>
+  <data name="InstitutionFaxLengthError" xml:space="preserve">
+    <value>El número del fax debe tener exactamente 10 caracteres sin espacios, guiones o paréntesis</value>
+  </data>
+  <data name="InstitutionTelephoneLengthError" xml:space="preserve">
+    <value>El número de teléfono debe tener exactamente 10 caracteres sin espacios, guiones o paréntesis</value>
+  </data>
+  <data name="InstitutionTelephoneRequiredError" xml:space="preserve">
+    <value>El número de teléfono es requerido</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="InstitutionType" xml:space="preserve">
+    <value>Tipo de institución</value>
+  </data>
+  <data name="InstitutionTypeDescription" xml:space="preserve">
+    <value>Tipo de institución</value>
+  </data>
+  <data name="InstitutionTypeNameDescription" xml:space="preserve">
+    <value>Nombre del tipo de institución</value>
+  </data>
+  <data name="InstitutionTypeNameLengthError" xml:space="preserve">
+    <value>El nombre del tipo de institución debe tener un mínimo de 4 y un máximo de 40 carácteres</value>
+  </data>
+  <data name="InstitutionTypeNameRequiredError" xml:space="preserve">
+    <value>Debe escribir el nombre del tipo de institución</value>
+  </data>
+  <data name="InstitutionTypeRequiredError" xml:space="preserve">
+    <value>Debe especificar el tipo de institución</value>
+  </data>
+  <data name="InstitutionTypes" xml:space="preserve">
+    <value>Tipos de institución</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Teléfono móvil</value>
+  </data>
+  <data name="ServantFaxLengthError" xml:space="preserve">
+    <value>El número de fax debe tener exactamente 10 caracteres sin espacios, guiones o paréntesis</value>
+  </data>
+  <data name="ServantMobileLengthError" xml:space="preserve">
+    <value>El número de teléfono debe tener exactamente 10 caracteres sin espacios, guiones o paréntesis</value>
+  </data>
+  <data name="ServantTelephoneLengthError" xml:space="preserve">
+    <value>El número de teléfono debe tener exactamente 10 caracteres sin espacios, guiones o paréntesis</value>
+  </data>
+  <data name="ServantTelephoneRequiredError" xml:space="preserve">
+    <value>El número de teléfono del servidor público es requerido</value>
+  </data>
+  <data name="HomePhone" xml:space="preserve">
+    <value>Teléfono residencial</value>
+  </data>
+  <data name="ServantHomePhoneLengthError" xml:space="preserve">
+    <value>El número de teléfono debe tener exactamente 10 caracteres sin espacios, guiones o paréntesis</value>
+  </data>
+  <data name="PlanTypes" xml:space="preserve">
+    <value>Tipos de planes</value>
+  </data>
+  <data name="ShouldHaveInformationAccessOffice" xml:space="preserve">
+    <value>¿Debe tener Oficina de Acceso a la Información?</value>
+  </data>
+  <data name="ShouldHaveInformationAccessOfficeDescription" xml:space="preserve">
+    <value>¿Debe tener Oficina de Acceso a la Información?</value>
+  </data>
+  <data name="ShouldHaveInformationAccessOfficeRequiredError" xml:space="preserve">
+    <value>Debe señalar si la institución debe tener Oficina de Acceso a la Información</value>
+  </data>
+  <data name="ShouldHavePublicEthicsCommittee" xml:space="preserve">
+    <value>¿Debe tener Comité de Ética Pública?</value>
+  </data>
+  <data name="ShouldHavePublicEthicsCommitteeDescription" xml:space="preserve">
+    <value>¿Debe tener Comité de Ética Pública?</value>
+  </data>
+  <data name="ShouldHavePublicEthicsCommitteeRequiredError" xml:space="preserve">
+    <value>Debe señalar si la institución debe tener Comité de Ética Pública</value>
+  </data>
+  <data name="Plans" xml:space="preserve">
+    <value>Planes</value>
+  </data>
+  <data name="PlanType" xml:space="preserve">
+    <value>Tipo de plan</value>
+  </data>
+  <data name="PlanTypeDescription" xml:space="preserve">
+    <value>Tipo de plan</value>
+  </data>
+  <data name="PlanTypeRequiredError" xml:space="preserve">
+    <value>Debe especificar el tipo de plan</value>
+  </data>
+  <data name="PlanNameLengthError" xml:space="preserve">
+    <value>El nombre del plan debe tener un mínimo de 5 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="PlanNameRequiredError" xml:space="preserve">
+    <value>Debe colocar el nombre del plan </value>
+  </data>
+  <data name="Actions_AddActors" xml:space="preserve">
+    <value>Añadir actores</value>
+  </data>
+  <data name="InstitutionsforThisInstitutionType" xml:space="preserve">
+    <value>Las siguientes instituciones pertenecen a este tipo de institución</value>
+  </data>
+  <data name="NoInstitutionsforThisInstitutionType" xml:space="preserve">
+    <value>No existen instituciones de este tipo</value>
+  </data>
+  <data name="InstitutionsforThisSector" xml:space="preserve">
+    <value>Las siguientes instituciones pertenecen a este sector</value>
+  </data>
+  <data name="LegalFramework" xml:space="preserve">
+    <value>Marco Legal</value>
+  </data>
+  <data name="Mission" xml:space="preserve">
+    <value>Misión</value>
+  </data>
+  <data name="OrganizationalChart" xml:space="preserve">
+    <value>Organigrama institucional</value>
+  </data>
+  <data name="OurDirectors" xml:space="preserve">
+    <value>Nuestros Directores</value>
+  </data>
+  <data name="StrategicPlan" xml:space="preserve">
+    <value>Plan estratégico</value>
+  </data>
+  <data name="EthicsAndIntegrity" xml:space="preserve">
+    <value>Ética e Integridad</value>
+  </data>
+  <data name="InformationAccess" xml:space="preserve">
+    <value>Acceso a la Información Pública</value>
+  </data>
+  <data name="Actions_First" xml:space="preserve">
+    <value>&lt;&lt;</value>
+  </data>
+  <data name="Actions_Last" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="Actions_Next" xml:space="preserve">
+    <value>Siguiente &gt;</value>
+  </data>
+  <data name="Actions_Previous" xml:space="preserve">
+    <value>&lt; Anterior</value>
+  </data>
+  <data name="Action_FindByName" xml:space="preserve">
+    <value>Encontrar por nombre</value>
+  </data>
+  <data name="Action_InstitutionType" xml:space="preserve">
+    <value>, es de tipo </value>
+  </data>
+  <data name="Action_Sector" xml:space="preserve">
+    <value>y está clasificada dentro del sector </value>
+  </data>
+  <data name="EthicsTraining" xml:space="preserve">
+    <value>Diplomado de Ética Pública</value>
+  </data>
+  <data name="IsPublicEthicsCommitteeAppropriate" xml:space="preserve">
+    <value>¿Está la Comisión de Ética Pública adecuada a la Resolución 1/2012?</value>
+  </data>
+  <data name="IsPublicEthicsCommitteeAppropriateDescription" xml:space="preserve">
+    <value>¿Está la Comisión de Ética Pública adecuada a la Resolución 1/2012?</value>
+  </data>
+  <data name="IsPublicEthicsCommitteeAppropriateRequiredError" xml:space="preserve">
+    <value>Debe indicar si  la Comisión de Ética Pública está adecuada a la Resolución 1/2012?</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="ÌsPlanApproved" xml:space="preserve">
+    <value>¿Está este plan aprobado?</value>
+  </data>
+  <data name="ÌsPlanApprovedDescription" xml:space="preserve">
+    <value>¿Está este plan aprobado?</value>
+  </data>
+  <data name="ÌsPlanApprovedRequiredError" xml:space="preserve">
+    <value>Debe indicar si este plan está aprobado</value>
+  </data>
+  <data name="IsInstitutionDisabled" xml:space="preserve">
+    <value>¿Está esta institución deshabilitada?</value>
+  </data>
+  <data name="IsInstitutionDisabledDescription" xml:space="preserve">
+    <value>¿Está esta institución deshabilitada?</value>
+  </data>
+  <data name="IsInstitutionDisabledRequiredError" xml:space="preserve">
+    <value>Favor indicar si esta institución está desahabilitada</value>
+  </data>
+  <data name="MissionVissionValues" xml:space="preserve">
+    <value>Misión, Visión y Valores</value>
+  </data>
+  <data name="HiringDate" xml:space="preserve">
+    <value>Fecha de contratación</value>
+  </data>
+  <data name="HiringDateDescription" xml:space="preserve">
+    <value>Fecha de contratación</value>
+  </data>
+  <data name="HiringDateRequiredError" xml:space="preserve">
+    <value>Debe indicar la fecha de contratación</value>
+  </data>
+  <data name="InternalIDNumber" xml:space="preserve">
+    <value>ID interno empleado DIGEIG</value>
+  </data>
+  <data name="InternalIDNumberDescription" xml:space="preserve">
+    <value>ID interno empleado DIGEIG</value>
+  </data>
+  <data name="IsPublicServantActive" xml:space="preserve">
+    <value>¿Está laborando actualmente en la institución señalada?</value>
+  </data>
+  <data name="IsPublicServantActiveDescription" xml:space="preserve">
+    <value>¿Está laborando actualmente en la institución señalada?</value>
+  </data>
+  <data name="IsPublicServantActiveRequiredError" xml:space="preserve">
+    <value>Debe señalar si el servidor público está laborando actualmente en la institución señalada</value>
+  </data>
+  <data name="SubstantiveAreas" xml:space="preserve">
+    <value>Áreas sustantivas</value>
+  </data>
+  <data name="DepartureDate" xml:space="preserve">
+    <value>Fecha de salida</value>
+  </data>
+  <data name="DepartureDateDescription" xml:space="preserve">
+    <value>Fecha de salida</value>
+  </data>
+  <data name="NationalIdentificationNumber" xml:space="preserve">
+    <value>Cédula</value>
+  </data>
+  <data name="NationalIdentificationNumberLengthError" xml:space="preserve">
+    <value>La cédula debe ser de un mínimo y máximo de 11 caracteres sin guiones</value>
+  </data>
+  <data name="NationalIdentificationNumberRequiredError" xml:space="preserve">
+    <value>Debe introducir un número de cédula para este servidor público</value>
+  </data>
+  <data name="NationalityName" xml:space="preserve">
+    <value>Nacionalidad</value>
+  </data>
+  <data name="NationalityNameDescription" xml:space="preserve">
+    <value>Nacionalidad</value>
+  </data>
+  <data name="NationalityNameLengthError" xml:space="preserve">
+    <value>El nombre de la nacionalidad no puede ser mayor a 30 caracteres</value>
+  </data>
+  <data name="NationalityNameRequiredError" xml:space="preserve">
+    <value>Es requerido colocar un nombre a la nacionalidad</value>
+  </data>
+  <data name="PassportNumber" xml:space="preserve">
+    <value>Número de pasaporte</value>
+  </data>
+  <data name="PassportNumberLengthError" xml:space="preserve">
+    <value>El número de pasaporte no puede ser mayor a 10 caracteres</value>
+  </data>
+  <data name="AddressCity" xml:space="preserve">
+    <value>Ciudad, Sección, Paraje</value>
+  </data>
+  <data name="AddressCityDescription" xml:space="preserve">
+    <value>Ciudad, Sección, Paraje</value>
+  </data>
+  <data name="AddressCityLengthError" xml:space="preserve">
+    <value>La longitud de especificar la Ciudad, Sección, Paraje debe ser de un mínimo de 10 y un máximo de 150 caracteres</value>
+  </data>
+  <data name="AddressProvince" xml:space="preserve">
+    <value>Provincia</value>
+  </data>
+  <data name="AddressProvinceDescription" xml:space="preserve">
+    <value>Provincia</value>
+  </data>
+  <data name="AddressProvinceLengthError" xml:space="preserve">
+    <value>La longitud de la Provincia debe ser de un mínimo de 5 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="AddressSector" xml:space="preserve">
+    <value>Sector, Barrio, Urbanización</value>
+  </data>
+  <data name="AddressSectorDescription" xml:space="preserve">
+    <value>Sector, Barrio, Urbanización</value>
+  </data>
+  <data name="AddressSectorLengthError" xml:space="preserve">
+    <value>La longitud de especificar el Sector, Barrio, Urbanización debe ser de un mínimo de 10 y un máximo de 150 caracteres</value>
+  </data>
+  <data name="ApartmentNumber" xml:space="preserve">
+    <value>Apartamento No.</value>
+  </data>
+  <data name="ApartmentNumberDescription" xml:space="preserve">
+    <value>Apartamento No.</value>
+  </data>
+  <data name="BirthDate" xml:space="preserve">
+    <value>Fecha de nacimiento</value>
+  </data>
+  <data name="BirthDateDescription" xml:space="preserve">
+    <value>Fecha de nacimiento</value>
+  </data>
+  <data name="BirthPlace" xml:space="preserve">
+    <value>Lugar de nacimiento</value>
+  </data>
+  <data name="BirthPlaceDescription" xml:space="preserve">
+    <value>Lugar de nacimiento</value>
+  </data>
+  <data name="BirthPlaceLengthError" xml:space="preserve">
+    <value>El lugar de nacimiento debe ser de un mínimo de 2 y un máximo de 30 caracteres</value>
+  </data>
+  <data name="Career" xml:space="preserve">
+    <value>Profesión u oficio</value>
+  </data>
+  <data name="CareerDescription" xml:space="preserve">
+    <value>Profesión u oficio</value>
+  </data>
+  <data name="CareerLengthError" xml:space="preserve">
+    <value>La profesión u oficio no puede tener menos 10 ni más de 150 caracteres</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Femenino</value>
+  </data>
+  <data name="IsMale" xml:space="preserve">
+    <value>Sexo</value>
+  </data>
+  <data name="IsMaleDescription" xml:space="preserve">
+    <value>Sexo</value>
+  </data>
+  <data name="IsMaleRequiredError" xml:space="preserve">
+    <value>Debe indicar el sexo del servidor público</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Masculino</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>Nacionalidad</value>
+  </data>
+  <data name="NationalityDescription" xml:space="preserve">
+    <value>Nacionalidad</value>
+  </data>
+  <data name="NationalityRequiredError" xml:space="preserve">
+    <value>Debe indicar el lugar de nacimiento del servidor público</value>
+  </data>
+  <data name="PropertyNumber" xml:space="preserve">
+    <value>Propiedad (casa / edificio) No.</value>
+  </data>
+  <data name="PropertyNumberDescription" xml:space="preserve">
+    <value>Propiedad (casa / edificio) No.</value>
+  </data>
+  <data name="Salary" xml:space="preserve">
+    <value>Salario</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>Calle, Avenida o Carretera</value>
+  </data>
+  <data name="StreetDescription" xml:space="preserve">
+    <value>Calle, Avenida o Carretera</value>
+  </data>
+  <data name="StreetLengthError" xml:space="preserve">
+    <value>La calle, avenida o carretera debe tener una longitud mínima de 5 y máxima de 100 caracteres</value>
+  </data>
+  <data name="AboutTransparency" xml:space="preserve">
+    <value>Transparencia Gubernamental</value>
+  </data>
+  <data name="Access311" xml:space="preserve">
+    <value>Acceso al 311</value>
+  </data>
+  <data name="Budget" xml:space="preserve">
+    <value>Presupuesto</value>
+  </data>
+  <data name="Finances" xml:space="preserve">
+    <value>Finanzas</value>
+  </data>
+  <data name="FinantialReports" xml:space="preserve">
+    <value>Informes financieros funcionarios públicos</value>
+  </data>
+  <data name="HumanResources" xml:space="preserve">
+    <value>Recursos humanos</value>
+  </data>
+  <data name="InformationAccessOffice" xml:space="preserve">
+    <value>Oficina de acceso a la información</value>
+  </data>
+  <data name="InstitutionLegalFramework" xml:space="preserve">
+    <value>Marco legal de la institución</value>
+  </data>
+  <data name="Norms" xml:space="preserve">
+    <value>Normativas</value>
+  </data>
+  <data name="OpenGovernment" xml:space="preserve">
+    <value>Gobierno Abierto</value>
+  </data>
+  <data name="OrganizationalStructure" xml:space="preserve">
+    <value>Estructura orgánica</value>
+  </data>
+  <data name="ProcurementAndContracting" xml:space="preserve">
+    <value>Compras y Contrataciones</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Proyectos</value>
+  </data>
+  <data name="PublicServices" xml:space="preserve">
+    <value>Servicios al público</value>
+  </data>
+  <data name="RecipientsOfAssistancePrograms" xml:space="preserve">
+    <value>Beneficiarios de programas asistenciales</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Estadísticas institucionales</value>
+  </data>
+  <data name="SwornStatementsOfAssets" xml:space="preserve">
+    <value>Declaraciones juradas de bienes</value>
+  </data>
+  <data name="Tracing" xml:space="preserve">
+    <value>Seguimiento de acuerdos y convenios</value>
+  </data>
+  <data name="TransparencySystemLegalFramework" xml:space="preserve">
+    <value>Marco legal del sistema de transparencia</value>
+  </data>
+  <data name="UnifiedTransparencyPortal" xml:space="preserve">
+    <value>Portal Único de Transparencia</value>
+  </data>
+  <data name="CEPMembers" xml:space="preserve">
+    <value>Miembros de la Comisión de Ética Pública</value>
+  </data>
+  <data name="InformationAccessOfficers" xml:space="preserve">
+    <value>Oficiales de acceso a la información</value>
+  </data>
+  <data name="ObligatedSubjects" xml:space="preserve">
+    <value>Sujetos obligados</value>
+  </data>
+  <data name="ActivityAudience" xml:space="preserve">
+    <value>Público al que va dirigida la actividad</value>
+  </data>
+  <data name="ActivityAudienceDescription" xml:space="preserve">
+    <value>Público al que va dirigida la actividad</value>
+  </data>
+  <data name="ActivityAudienceLengthError" xml:space="preserve">
+    <value>La descripción del público al que va dirigida la actividad no puede ser menor a 10, ni mayor de 100 caracteres</value>
+  </data>
+  <data name="ActivityAudienceRequiredError" xml:space="preserve">
+    <value>Debe indicar al público al que va dirigida la actividad</value>
+  </data>
+  <data name="ActivityBeginHour" xml:space="preserve">
+    <value>Hora de inicio de la actividad</value>
+  </data>
+  <data name="ActivityBeginHourDescription" xml:space="preserve">
+    <value>Hora de inicio de la actividad</value>
+  </data>
+  <data name="ActivityBeginHourMinMaxError" xml:space="preserve">
+    <value>La hora mínima de inicio es las 8am y la máxima es la 18(6pm)</value>
+  </data>
+  <data name="ActivityBeginHourRequiredError" xml:space="preserve">
+    <value>Debe indicar la hora de inicio de la actividad</value>
+  </data>
+  <data name="ActivityContactPerson" xml:space="preserve">
+    <value>Persona de contacto</value>
+  </data>
+  <data name="ActivityContactPersonDescription" xml:space="preserve">
+    <value>Persona de contacto</value>
+  </data>
+  <data name="ActivityContactPersonLengthError" xml:space="preserve">
+    <value>La información de la persona de contacto no puede ser menor a 10, ni mayor de 100 caracteres</value>
+  </data>
+  <data name="ActivityContactPersonRequiredError" xml:space="preserve">
+    <value>Debe indicar el nombre de la persona de contacto</value>
+  </data>
+  <data name="ActivityDate" xml:space="preserve">
+    <value>Fecha de la actividad (Sujeto a disponibilidad)</value>
+  </data>
+  <data name="ActivityDateDescription" xml:space="preserve">
+    <value>Fecha de la actividad (Sujeto a disponibilidad)</value>
+  </data>
+  <data name="ActivityDateOfApplication" xml:space="preserve">
+    <value>Fecha de solicitud</value>
+  </data>
+  <data name="ActivityDateOfApplicationDescription" xml:space="preserve">
+    <value>Fecha de solicitud</value>
+  </data>
+  <data name="ActivityDateOfApplicationRequiredError" xml:space="preserve">
+    <value>Debe indicar la fecha de solicitud de la aplicación</value>
+  </data>
+  <data name="ActivityDateRequiredError" xml:space="preserve">
+    <value>Debe indicar la fecha de la actividad</value>
+  </data>
+  <data name="ActivityDoesItHaveLaptop" xml:space="preserve">
+    <value>¿Dispone de laptop?</value>
+  </data>
+  <data name="ActivityDoesItHaveLaptopDescription" xml:space="preserve">
+    <value>¿Dispone de laptop?</value>
+  </data>
+  <data name="ActivityDoesItHaveLaptopRequiredError" xml:space="preserve">
+    <value>Debe indicar si dispone de una laptop</value>
+  </data>
+  <data name="ActivityDoesItHaveMaterials" xml:space="preserve">
+    <value>¿Dispone de materiales?</value>
+  </data>
+  <data name="ActivityDoesItHaveMaterialsDescription" xml:space="preserve">
+    <value>¿Dispone de materiales?</value>
+  </data>
+  <data name="ActivityDoesItHaveMaterialsRequiredError" xml:space="preserve">
+    <value>Debe indicar si dispone de materiales</value>
+  </data>
+  <data name="ActivityDoesItHavePodium" xml:space="preserve">
+    <value>¿Dispone de podium?</value>
+  </data>
+  <data name="ActivityDoesItHavePodiumDescription" xml:space="preserve">
+    <value>¿Dispone de podium?</value>
+  </data>
+  <data name="ActivityDoesItHavePodiumRequiredError" xml:space="preserve">
+    <value>Debe indicar si dispone de podium</value>
+  </data>
+  <data name="ActivityDoesItHaveProjector" xml:space="preserve">
+    <value>¿Dispone de un proyector?</value>
+  </data>
+  <data name="ActivityDoesItHaveProjectorDescription" xml:space="preserve">
+    <value>¿Dispone de un proyector?</value>
+  </data>
+  <data name="ActivityDoesItHaveProjectorRequiredError" xml:space="preserve">
+    <value>Debe indicar si dispone de un proyector</value>
+  </data>
+  <data name="ActivityDoesItHaveSoundEquipment" xml:space="preserve">
+    <value>¿Dispone de equipo de sonido?</value>
+  </data>
+  <data name="ActivityDoesItHaveSoundEquipmentDescription" xml:space="preserve">
+    <value>Debe indicar si dispone de un equipo de sonido</value>
+  </data>
+  <data name="ActivityDoesItHaveSoundEquipmentRequiredError" xml:space="preserve">
+    <value>Debe indicar si dispone de un equipo de sonido</value>
+  </data>
+  <data name="ActivityEndHour" xml:space="preserve">
+    <value>Hora de fin de la actividad</value>
+  </data>
+  <data name="ActivityEndHourDescription" xml:space="preserve">
+    <value>Hora de fin de la actividad</value>
+  </data>
+  <data name="ActivityEndHourMinMaxError" xml:space="preserve">
+    <value>La hora mínima de fin es las 9am y la máxima es la 18(6pm)</value>
+  </data>
+  <data name="ActivityEndHourRequiredError" xml:space="preserve">
+    <value>Debe indicar la hora de fin de la actividad</value>
+  </data>
+  <data name="ActivityLocation" xml:space="preserve">
+    <value>Lugar donde se realizará la actividad</value>
+  </data>
+  <data name="ActivityLocationDescription" xml:space="preserve">
+    <value>Lugar donde se realizará la actividad</value>
+  </data>
+  <data name="ActivityLocationLengthError" xml:space="preserve">
+    <value>La descripción del lugar donde se realizará la actividad no puede ser menor de 10, ni mayor de 100 caracteres</value>
+  </data>
+  <data name="ActivityLocationRequiredError" xml:space="preserve">
+    <value>Debe indicar el lugar donde se realizará la actividad</value>
+  </data>
+  <data name="ActivityName" xml:space="preserve">
+    <value>Nombre de la actividad</value>
+  </data>
+  <data name="ActivityNameDescription" xml:space="preserve">
+    <value>Nombre de la actividad</value>
+  </data>
+  <data name="ActivityNameLengthError" xml:space="preserve">
+    <value>El nombre de la actividad no puede ser menor de 10, ni mayor de 100 caracteres</value>
+  </data>
+  <data name="ActivityNameRequiredError" xml:space="preserve">
+    <value>Debe indicar el nombre de la actividad</value>
+  </data>
+  <data name="ActivityOrganizingDepartment" xml:space="preserve">
+    <value>Departamento que organiza la actividad</value>
+  </data>
+  <data name="ActivityOrganizingDepartmentDescription" xml:space="preserve">
+    <value>Departamento que organiza la actividad</value>
+  </data>
+  <data name="ActivityOrganizingDepartmentLengthError" xml:space="preserve">
+    <value>La descripción del departamento que organiza la actividad debe ser de un mínimo de 10 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="ActivityOrganizingDepartmentRequiredError" xml:space="preserve">
+    <value>Debe indicar el departamento que organiza la actividad</value>
+  </data>
+  <data name="ActivitySubjects" xml:space="preserve">
+    <value>Temas a exponer</value>
+  </data>
+  <data name="ActivitySubjectsDescription" xml:space="preserve">
+    <value>Temas a exponer</value>
+  </data>
+  <data name="ActivitySubjectsLengthError" xml:space="preserve">
+    <value>La descripción de los temas a exponer no puede ser menor a 10, ni mayor de 100 caracteres</value>
+  </data>
+  <data name="ActivitySubjectsRequiredError" xml:space="preserve">
+    <value>Debe indicar los temas a exponer</value>
+  </data>
+  <data name="ActivitySugestedFacilitators" xml:space="preserve">
+    <value>Sugerencia de facilitador (es) para los temas señalados</value>
+  </data>
+  <data name="ActivitySugestedFacilitatorsDescription" xml:space="preserve">
+    <value>Sugerencia de facilitador (es) para los temas señalados</value>
+  </data>
+  <data name="ActivitySugestedFacilitatorsLengthError" xml:space="preserve">
+    <value>La sugerencia de facilitador (es) no puede ser menor de 10, ni mayor de 100 caracteres</value>
+  </data>
+  <data name="ActivitySupportRequests" xml:space="preserve">
+    <value>Solicitud de actividades</value>
+  </data>
+  <data name="ContactPersonEmail" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="ContactPersonEmailDescription" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="ContactPersonEmailLengthError" xml:space="preserve">
+    <value>El correo electrónico de la persona de contacto debe ser de un mínimo de 10 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="ContactPersonEmailRequiredError" xml:space="preserve">
+    <value>Debe indicar el correo electrónico de la persona de contacto</value>
+  </data>
+  <data name="ContactPersonTelephone" xml:space="preserve">
+    <value>Teléfono persona de contacto</value>
+  </data>
+  <data name="ContactPersonTelephoneLengthError" xml:space="preserve">
+    <value>El número de teléfono de la persona de contacto debe tener exactamente 10 caracteres, sin espacios, paréntesis o guiones</value>
+  </data>
+  <data name="ContactPersonTelephoneRequiredError" xml:space="preserve">
+    <value>Debe indicar el teléfono de la persona de contacto</value>
+  </data>
+  <data name="NumberOfParticipants" xml:space="preserve">
+    <value>Número de participantes</value>
+  </data>
+  <data name="NumberOfParticipantsDescription" xml:space="preserve">
+    <value>Número de participantes</value>
+  </data>
+  <data name="NumberOfParticipantsMinMaxError" xml:space="preserve">
+    <value>El número de participantes no puede ser menor a 1, ni mayor de 5000 personas</value>
+  </data>
+  <data name="NumberOfParticipantsRequiredError" xml:space="preserve">
+    <value>Debe indicar el número de participantes</value>
+  </data>
+  <data name="TelephoneExt" xml:space="preserve">
+    <value>Extensión</value>
+  </data>
+  <data name="TelephoneExtLengthError" xml:space="preserve">
+    <value>La extensión debe ser de un mínimo de 1 y un máximo de 5 caracteres</value>
+  </data>
+  <data name="TransparencyDownload" xml:space="preserve">
+    <value>Documentos para descarga</value>
+  </data>
+  <data name="Action_InstitutionLocation" xml:space="preserve">
+    <value>Su dirección es </value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Si</value>
+  </data>
+  <data name="ArticleImageUrl" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="ArticleImageUrlDescription" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="ArticleImageUrlLengthError" xml:space="preserve">
+    <value>La longitud de la URL de la imagen debe ser mayor a 10 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="ArticleImageUrlRequiredError" xml:space="preserve">
+    <value>Debe introducir una imágen descriptiva del artículo</value>
+  </data>
+  <data name="InstitutionImageUrl" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="InstitutionImageUrlDescription" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="InstitutionImageUrlLengthError" xml:space="preserve">
+    <value>La longitud de la URL de la imagen debe ser mayor a 10 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="InstitutionImageUrlRequiredError" xml:space="preserve">
+    <value>Debe introducir una ruta para el logo de la institución</value>
+  </data>
+  <data name="Administrative" xml:space="preserve">
+    <value>Administración</value>
+  </data>
+  <data name="DidItSendInformationAccessOfficeRegistryForm" xml:space="preserve">
+    <value>¿Envío el formulario de registro de la Oficina de Acceso a la Información?</value>
+  </data>
+  <data name="DidItSendInformationAccessOfficeRegistryFormDescription" xml:space="preserve">
+    <value>¿Envío el formulario de registro de la Oficina de Acceso a la Información?</value>
+  </data>
+  <data name="DidItSendInformationAccessOfficeRegistryFormRequiredError" xml:space="preserve">
+    <value>Debe indicar si envío el formulario de registro de la Oficina de Acceso a la Información</value>
+  </data>
+  <data name="DoesItBelongToRAIOAINetwork" xml:space="preserve">
+    <value>¿Pertenece el RAI a la Red RAI-OAI?</value>
+  </data>
+  <data name="DoesItBelongToRAIOAINetworkDescription" xml:space="preserve">
+    <value>¿Pertenece el RAI a la Red RAI-OAI?</value>
+  </data>
+  <data name="DoesItBelongToRAIOAINetworkRequiredError" xml:space="preserve">
+    <value>Debe indicar si el RAI pertenece a la Red RAI-OAI</value>
+  </data>
+  <data name="DoesRAIPerformOtherRoles" xml:space="preserve">
+    <value>¿Realiza el RAI otras funciones?</value>
+  </data>
+  <data name="DoesRAIPerformOtherRolesDescription" xml:space="preserve">
+    <value>¿Realiza el RAI otras funciones?</value>
+  </data>
+  <data name="DoesRAIPerformOtherRolesRequiredError" xml:space="preserve">
+    <value>Debe indicar si el RAI realiza otras funciones</value>
+  </data>
+  <data name="DoesTheOAIHaveAStatysticalSystem" xml:space="preserve">
+    <value>¿Dispone la OAI de un control estadístico de las solicitudes?</value>
+  </data>
+  <data name="DoesTheOAIHaveAStatysticalSystemDescription" xml:space="preserve">
+    <value>¿Dispone la OAI de un control estadístico de las solicitudes?</value>
+  </data>
+  <data name="DoesTheOAIHaveAStatysticalSystemRequiredError" xml:space="preserve">
+    <value>Debe indicar si la OAI dispone de un control estadístico de las solicitudes</value>
+  </data>
+  <data name="DoesTheOAIHaveTechnicalPersonnel" xml:space="preserve">
+    <value>¿Tiene la OAI personal técnico?</value>
+  </data>
+  <data name="DoesTheOAIHaveTechnicalPersonnelDescription" xml:space="preserve">
+    <value>¿Tiene la OAI personal técnico?</value>
+  </data>
+  <data name="DoesTheOAIHaveTechnicalPersonnelRequiredError" xml:space="preserve">
+    <value>Debe indicar si la OAI tiene personal técnico</value>
+  </data>
+  <data name="DoesTheOAIShareSpaceWithOtherArea" xml:space="preserve">
+    <value>¿La OAI/OAIM comparte espacio con otra área?</value>
+  </data>
+  <data name="DoesTheOAIShareSpaceWithOtherAreaDescription" xml:space="preserve">
+    <value>¿La OAI/OAIM comparte espacio con otra área?</value>
+  </data>
+  <data name="DoesTheOAIShareSpaceWithOtherAreaRequiredError" xml:space="preserve">
+    <value>Debe indicar si la OAI/OAIM comparte espacio con otra área</value>
+  </data>
+  <data name="HaveInformationAccessWorkshopsTakenPlace" xml:space="preserve">
+    <value>¿Se han realizado talleres de sensibilización en la institución?</value>
+  </data>
+  <data name="HaveInformationAccessWorkshopsTakenPlaceDescription" xml:space="preserve">
+    <value>¿Se han realizado talleres de sensibilización en la institución?</value>
+  </data>
+  <data name="HaveInformationAccessWorkshopsTakenPlaceRequiredError" xml:space="preserve">
+    <value>Debe indicar si se han realizado talleres de sensibilización en la institución</value>
+  </data>
+  <data name="IsRAIIncorporatedToAdministrativeCareerRegime" xml:space="preserve">
+    <value>¿Está el RAI incorporado al régimen de Carrera Administrativa?</value>
+  </data>
+  <data name="IsRAIIncorporatedToAdministrativeCareerRegimeDescription" xml:space="preserve">
+    <value>¿Está el RAI incorporado al régimen de Carrera Administrativa?</value>
+  </data>
+  <data name="IsRAIIncorporatedToAdministrativeCareerRegimeRequiredError" xml:space="preserve">
+    <value>Debe indicar si el RAI está incorporado al régimen de Carrera Administrativa?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithComputer" xml:space="preserve">
+    <value>¿Está la OAI dotada de computadora?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithComputerDescription" xml:space="preserve">
+    <value>¿Está la OAI dotada de computadora?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithComputerRequiredError" xml:space="preserve">
+    <value>Debe indicar si la OAI está dotada de computadora</value>
+  </data>
+  <data name="IsTheOAIEquippedWithFax" xml:space="preserve">
+    <value>¿Está la OAI dotada de Fax?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithFaxDescription" xml:space="preserve">
+    <value>¿Está la OAI dotada de Fax?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithFaxRequiredError" xml:space="preserve">
+    <value>Debe indicar si la OAI está dotada de Fax</value>
+  </data>
+  <data name="IsTheOAIEquippedWithInternetAccess" xml:space="preserve">
+    <value>¿Está la OAI dotada de Acceso a Internet?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithInternetAccessDescription" xml:space="preserve">
+    <value>¿Está la OAI dotada de Acceso a Internet?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithInternetAccessRequiredError" xml:space="preserve">
+    <value>Debe indicar si la OAI está dotada de Acceso a Internet</value>
+  </data>
+  <data name="IsTheOAIEquippedWithPhotocopier" xml:space="preserve">
+    <value>¿Está la OAI dotada de fotocopiadora?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithPhotocopierDescription" xml:space="preserve">
+    <value>¿Está la OAI dotada de fotocopiadora?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithPhotocopierRequiredError" xml:space="preserve">
+    <value>Debe indicar si la OAI está dotada de fotocopiadora</value>
+  </data>
+  <data name="IsTheOAIEquippedWithPrinter" xml:space="preserve">
+    <value>¿Está la OAI dotada de Impresora?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithPrinterDescription" xml:space="preserve">
+    <value>¿Está la OAI dotada de Impresora?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithPrinterRequiredError" xml:space="preserve">
+    <value>Debe indicar si la OAI está dotada de Impresora</value>
+  </data>
+  <data name="IsTheOAIEquippedWithScanner" xml:space="preserve">
+    <value>¿Está la OAI dotada de Scanner?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithScannerDescription" xml:space="preserve">
+    <value>¿Está la OAI dotada de Scanner?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithScannerRequiredError" xml:space="preserve">
+    <value>Debe indicar si la OAI está dotada de Scanner</value>
+  </data>
+  <data name="IsTheOAIEquippedWithTelephone" xml:space="preserve">
+    <value>¿Está la OAI dotada de Teléfono?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithTelephoneDescription" xml:space="preserve">
+    <value>¿Está la OAI dotada de Teléfono?</value>
+  </data>
+  <data name="IsTheOAIEquippedWithTelephoneRequiredError" xml:space="preserve">
+    <value>Debe indicar si la OAI está dotada de Teléfono</value>
+  </data>
+  <data name="IsTheOAIProperlyIdentified" xml:space="preserve">
+    <value>¿Está la OAI señalizada apropiadamente?</value>
+  </data>
+  <data name="IsTheOAIProperlyIdentifiedDescription" xml:space="preserve">
+    <value>¿Está la OAI señalizada apropiadamente?</value>
+  </data>
+  <data name="IsTheOAIProperlyIdentifiedRequiredError" xml:space="preserve">
+    <value>Debe indicar si la OAI está señalizada apropiadamente</value>
+  </data>
+  <data name="WasAMemoSentToTheInstitutionTalkingAboutTheExistenceOfTheOAI" xml:space="preserve">
+    <value>¿Se hizo de conocimiento a toda la institución la existencia de la OAI?</value>
+  </data>
+  <data name="WasAMemoSentToTheInstitutionTalkingAboutTheExistenceOfTheOAIDescription" xml:space="preserve">
+    <value>¿Se hizo de conocimiento a toda la institución la existencia de la OAI?</value>
+  </data>
+  <data name="WasAMemoSentToTheInstitutionTalkingAboutTheExistenceOfTheOAIRequiredError" xml:space="preserve">
+    <value>Debe señalar si se hizo de conocimiento a toda la institución la existencia de la OAI</value>
+  </data>
+  <data name="Action_StatePower" xml:space="preserve">
+    <value>Esta institución pertenece al poder</value>
+  </data>
+  <data name="InstitutionsforThisStatePower" xml:space="preserve">
+    <value>Las siguientes instituciones pertenecen a este poder del Estado</value>
+  </data>
+  <data name="InstitutionStatePowerDescription" xml:space="preserve">
+    <value>Poder del Estado</value>
+  </data>
+  <data name="InstitutionStatePowerRequiredError" xml:space="preserve">
+    <value>Debe especificar el poder del Estado al que pertenece esta institución</value>
+  </data>
+  <data name="StatePower" xml:space="preserve">
+    <value>Poder del Estado</value>
+  </data>
+  <data name="StatePowers" xml:space="preserve">
+    <value>Poderes del Estado</value>
+  </data>
+  <data name="InformationAccessRegistryForm" xml:space="preserve">
+    <value>Cuadro resumen formulario de registro</value>
+  </data>
+  <data name="InstitutionAmount" xml:space="preserve">
+    <value>Universo de Instituciones</value>
+  </data>
+  <data name="TSLegalFramework" xml:space="preserve">
+    <value>Marco legal del sistema de transparencia</value>
+  </data>
+  <data name="EvaluationDate" xml:space="preserve">
+    <value>Fecha de evaluación del portal</value>
+  </data>
+  <data name="EvaluationDateRequiredError" xml:space="preserve">
+    <value>Debe indicar la fecha de evaluación del portal de transparencia</value>
+  </data>
+  <data name="Has129_10_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 129-10 que aprueba el reglamento de la Ley General de Archivos?</value>
+  </data>
+  <data name="Has129_10_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 129-10 que aprueba el reglamento de la Ley General de Archivos?</value>
+  </data>
+  <data name="Has129_10_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 129-10 que aprueba el reglamento de la Ley General de Archivos</value>
+  </data>
+  <data name="Has486_12_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 486-12 que crea la Dirección General de Etica e Integridad Gubernamental?</value>
+  </data>
+  <data name="Has486_12_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 486-12 que crea la Dirección General de Etica e Integridad Gubernamental?</value>
+  </data>
+  <data name="Has486_12_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 486-12 que crea la Dirección General de Etica e Integridad Gubernamental</value>
+  </data>
+  <data name="Has543_12_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 543-12, que sustituye el 490-07 reglamento de Compras y Contrataciones de Bienes, Servicios y Obras?</value>
+  </data>
+  <data name="Has543_12_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 543-12, que sustituye el 490-07 reglamento de Compras y Contrataciones de Bienes, Servicios y Obras?</value>
+  </data>
+  <data name="Has543_12_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 543-12, que sustituye el 490-07 reglamento de Compras y Contrataciones de Bienes, Servicios y Obras</value>
+  </data>
+  <data name="Has694_09_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 694-09 que crea el Sistema 311 de Denuncias, Quejas, Reclamaciones y Sugerencias?</value>
+  </data>
+  <data name="Has694_09_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 694-09 que crea el Sistema 311 de Denuncias, Quejas, Reclamaciones y Sugerencias?</value>
+  </data>
+  <data name="Has694_09_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 694-09 que crea el Sistema 311 de Denuncias, Quejas, Reclamaciones y Sugerencias</value>
+  </data>
+  <data name="HasChamberOfAccountsLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley No. 10-04 de la Cámara de Cuentas de la República Dominicana?</value>
+  </data>
+  <data name="HasChamberOfAccountsLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley No. 10-04 de la Cámara de Cuentas de la República Dominicana?</value>
+  </data>
+  <data name="HasChamberOfAccountsLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley No. 10-04 de la Cámara de Cuentas de la República Dominicana</value>
+  </data>
+  <data name="HasDIGECOGLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley 126-01 que crea la Dirección General de Contabilidad Gubernamental?</value>
+  </data>
+  <data name="HasDIGECOGLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley 126-01 que crea la Dirección General de Contabilidad Gubernamental?</value>
+  </data>
+  <data name="HasDIGECOGLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley 126-01 que crea la Dirección General de Contabilidad Gubernamental</value>
+  </data>
+  <data name="HasFreeInformationAccessLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley General 200-04 sobre Libre Acceso a la Información Pública y reglamentación complementaria?</value>
+  </data>
+  <data name="HasFreeInformationAccessLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley General 200-04 sobre Libre Acceso a la Información Pública y reglamentación complementaria?</value>
+  </data>
+  <data name="HasFreeInformationAccessLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley General 200-04 sobre Libre Acceso a la Información Pública y reglamentación complementaria</value>
+  </data>
+  <data name="HasGeneralArchiveLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley General de Archivos 481-08?</value>
+  </data>
+  <data name="HasGeneralArchiveLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley General de Archivos 481-08?</value>
+  </data>
+  <data name="HasGeneralArchiveLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley General de Archivos 481-08</value>
+  </data>
+  <data name="HasGeneralAssetDeclarationLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley 82-79 sobre Declaración Jurada de Bienes?</value>
+  </data>
+  <data name="HasGeneralAssetDeclarationLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley 82-79 sobre Declaración Jurada de Bienes?</value>
+  </data>
+  <data name="HasGeneralAssetDeclarationLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley 82-79 sobre Declaración Jurada de Bienes</value>
+  </data>
+  <data name="HasInstitutionLegalFramework" xml:space="preserve">
+    <value>¿Se presenta la Base Legal de la Institución?</value>
+  </data>
+  <data name="HasInstitutionLegalFrameworkDescription" xml:space="preserve">
+    <value>¿Se presenta la Base Legal de la Institución?</value>
+  </data>
+  <data name="HasInstitutionLegalFrameworkRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Base Legal de la Institución</value>
+  </data>
+  <data name="HasNationalTreasuryLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley 567-05 de Tesorería Nacional?</value>
+  </data>
+  <data name="HasNationalTreasuryLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley 567-05 de Tesorería Nacional?</value>
+  </data>
+  <data name="HasNationalTreasuryLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley 567-05 de Tesorería Nacional</value>
+  </data>
+  <data name="HasPublicCreditLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley 6-06 de Crédito Público?</value>
+  </data>
+  <data name="HasPublicCreditLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley 6-06 de Crédito Público?</value>
+  </data>
+  <data name="HasPublicCreditLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley 6-06 de Crédito Público</value>
+  </data>
+  <data name="HasPublicFunctionLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley de Función Pública 41-08?</value>
+  </data>
+  <data name="HasPublicFunctionLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley de Función Pública 41-08?</value>
+  </data>
+  <data name="HasPublicFunctionLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley 41-08 de Función Pública </value>
+  </data>
+  <data name="HasPublicSectorBudgetLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley 423-06 Orgánica de Presupuesto para el Sector Público?</value>
+  </data>
+  <data name="HasPublicSectorBudgetLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley 423-06 Orgánica de Presupuesto para el Sector Público?</value>
+  </data>
+  <data name="HasPublicSectorBudgetLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley 423-06 Orgánica de Presupuesto para el Sector Público</value>
+  </data>
+  <data name="HasPurchasingAndContractingLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley 340-06 y 449-06 sobre Compras y Contrataciones de Bienes, Servicios, Obras y Concesiones y Reglamentación Complementaria?</value>
+  </data>
+  <data name="HasPurchasingAndContractingLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley 340-06 y 449-06 sobre Compras y Contrataciones de Bienes, Servicios, Obras y Concesiones y Reglamentación Complementaria?</value>
+  </data>
+  <data name="HasPurchasingAndContractingLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley 340-06 y 449-06 sobre Compras y Contrataciones de Bienes, Servicios, Obras y Concesiones y Reglamentación Complementaria</value>
+  </data>
+  <data name="HasSIGEFLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley 5-07 que crea el Sistema Integrado de Administración Financiera del Estado?</value>
+  </data>
+  <data name="HasSIGEFLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley 5-07 que crea el Sistema Integrado de Administración Financiera del Estado?</value>
+  </data>
+  <data name="HasSIGEFLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley 5-07 que crea el Sistema Integrado de Administración Financiera del Estado</value>
+  </data>
+  <data name="HasSINACILaw" xml:space="preserve">
+    <value>¿Se presenta la Ley 10-07 que instituye el Sistema Nacional de Control Interno y de la Contraloría General de la República?</value>
+  </data>
+  <data name="HasSINACILawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley 10-07 que instituye el Sistema Nacional de Control Interno y de la Contraloría General de la República?</value>
+  </data>
+  <data name="HasSINACILawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley 10-07 que instituye el Sistema Nacional de Control Interno y de la Contraloría General de la República</value>
+  </data>
+  <data name="HasSNIPLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley 498-06 de Planificación e Inversión Pública?</value>
+  </data>
+  <data name="HasSNIPLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley 498-06 de Planificación e Inversión Pública?</value>
+  </data>
+  <data name="HasSNIPLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley 498-06 de Planificación e Inversión Pública</value>
+  </data>
+  <data name="HasSuperiorAdministrativeCourtLaw" xml:space="preserve">
+    <value>¿Se presenta la Ley 13-07 Sobre el Tribunal Superior Administrativo?</value>
+  </data>
+  <data name="HasSuperiorAdministrativeCourtLawDescription" xml:space="preserve">
+    <value>¿Se presenta la Ley 13-07 Sobre el Tribunal Superior Administrativo?</value>
+  </data>
+  <data name="HasSuperiorAdministrativeCourtLawRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ley 13-07 Sobre el Tribunal Superior Administrativo</value>
+  </data>
+  <data name="Has06_04_Resolution" xml:space="preserve">
+    <value>¿Se presenta el Reglamento No. 06-04, de aplicación de la Ley 10-04 de Cámaras de Cuenta?</value>
+  </data>
+  <data name="Has06_04_ResolutionDescription" xml:space="preserve">
+    <value>¿Se presenta el Reglamento No. 06-04, de aplicación de la Ley 10-04 de Cámaras de Cuenta?</value>
+  </data>
+  <data name="Has06_04_ResolutionRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Reglamento No. 06-04, de aplicación de la Ley 10-04 de Cámaras de Cuenta</value>
+  </data>
+  <data name="Has09_04_Resolution" xml:space="preserve">
+    <value>¿Se presenta el Reglamento No. 09-04, sobre Procedimiento para la Contratación de firmas de Auditorias Privadas Independientes?</value>
+  </data>
+  <data name="Has09_04_ResolutionDescription" xml:space="preserve">
+    <value>¿Se presenta el Reglamento No. 09-04, sobre Procedimiento para la Contratación de firmas de Auditorias Privadas Independientes?</value>
+  </data>
+  <data name="Has09_04_ResolutionRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Reglamento No. 09-04, sobre Procedimiento para la Contratación de firmas de Auditorias Privadas Independientes</value>
+  </data>
+  <data name="Has130_05_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 130-05 que aprueba el reglamento de aplicación de la Ley 200-04?</value>
+  </data>
+  <data name="Has130_05_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 130-05 que aprueba el reglamento de aplicación de la Ley 200-04?</value>
+  </data>
+  <data name="Has130_05_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 130-05 que aprueba el reglamento de aplicación de la Ley 200-04</value>
+  </data>
+  <data name="Has149_98_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 149-98 que crea las Comisiones de Ética Pública?</value>
+  </data>
+  <data name="Has149_98_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 149-98 que crea las Comisiones de Ética Pública?</value>
+  </data>
+  <data name="Has149_98_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 149-98 que crea las Comisiones de Ética Pública</value>
+  </data>
+  <data name="Has1523_04_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 1523-04 que establece el Procedimiento para la Contratación de Operaciones de Crédito Público Interno y Externo de la Nación?</value>
+  </data>
+  <data name="Has1523_04_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 1523-04 que establece el Procedimiento para la Contratación de Operaciones de Crédito Público Interno y Externo de la Nación?</value>
+  </data>
+  <data name="Has1523_04_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 1523-04 que establece el Procedimiento para la Contratación de Operaciones de Crédito Público Interno y Externo de la Nación</value>
+  </data>
+  <data name="Has287_06_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 287-06 sobre Declaración Jurada de Bienes?</value>
+  </data>
+  <data name="Has287_06_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 287-06 sobre Declaración Jurada de Bienes?</value>
+  </data>
+  <data name="Has287_06_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 287-06 sobre Declaración Jurada de Bienes</value>
+  </data>
+  <data name="Has311Link" xml:space="preserve">
+    <value>¿Se presenta el Acceso al Portal de 311 sobre Quejas, reclamaciones, sugerencias y denuncias?</value>
+  </data>
+  <data name="Has311LinkDescription" xml:space="preserve">
+    <value>¿Se presenta el Acceso al Portal de 311 sobre Quejas, reclamaciones, sugerencias y denuncias?</value>
+  </data>
+  <data name="Has311LinkRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta el Acceso al Portal de 311 sobre Quejas, reclamaciones, sugerencias y denuncias</value>
+  </data>
+  <data name="Has441_06_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto No. 441-06 sobre Sistema de Tesorería de la República Dominicana?</value>
+  </data>
+  <data name="Has441_06_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto No. 441-06 sobre Sistema de Tesorería de la República Dominicana?</value>
+  </data>
+  <data name="Has441_06_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto No. 441-06 sobre Sistema de Tesorería de la República Dominicana</value>
+  </data>
+  <data name="Has491_07_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 491-07 que establece el reglamento de aplicación del Sistema Nacional de Control Interno?</value>
+  </data>
+  <data name="Has491_07_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 491-07 que establece el reglamento de aplicación del Sistema Nacional de Control Interno?</value>
+  </data>
+  <data name="Has491_07_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 491-07 que establece el reglamento de aplicación del Sistema Nacional de Control Interno</value>
+  </data>
+  <data name="Has523_09_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 523-09 reglamento de relaciones laborales en la administración pública?</value>
+  </data>
+  <data name="Has523_09_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 523-09 reglamento de relaciones laborales en la administración pública?</value>
+  </data>
+  <data name="Has523_09_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 523-09 reglamento de relaciones laborales en la administración pública</value>
+  </data>
+  <data name="Has524_09_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 524-09 reglamento de reclutamiento y selección de personal en la Administración Pública?</value>
+  </data>
+  <data name="Has524_09_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 524-09 reglamento de reclutamiento y selección de personal en la Administración Pública?</value>
+  </data>
+  <data name="Has524_09_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 524-09 reglamento de reclutamiento y selección de personal en la Administración Pública</value>
+  </data>
+  <data name="Has525_09_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 525-09 reglamento de evaluación del desempeño y promoción de los servidores y funcionarios públicos?</value>
+  </data>
+  <data name="Has525_09_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 525-09 reglamento de evaluación del desempeño y promoción de los servidores y funcionarios públicos?</value>
+  </data>
+  <data name="Has525_09_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 525-09 reglamento de evaluación del desempeño y promoción de los servidores y funcionarios públicos</value>
+  </data>
+  <data name="Has527_09_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 527-09 Reglamento estructura orgánica, cargos y polítca salarial?</value>
+  </data>
+  <data name="Has527_09_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 527-09 Reglamento estructura orgánica, cargos y polítca salarial?</value>
+  </data>
+  <data name="Has527_09_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 527-09 Reglamento estructura orgánica, cargos y polítca salarial</value>
+  </data>
+  <data name="Has528_09_Decree" xml:space="preserve">
+    <value>¿Se presenta el Decreto 528-09 Reglamento orgánica funcional del Ministerio de Administración Pública?</value>
+  </data>
+  <data name="Has528_09_DecreeDescription" xml:space="preserve">
+    <value>¿Se presenta el Decreto 528-09 Reglamento orgánica funcional del Ministerio de Administración Pública?</value>
+  </data>
+  <data name="Has528_09_DecreeRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta  el Decreto 528-09 Reglamento orgánica funcional del Ministerio de Administración Pública</value>
+  </data>
+  <data name="HasAnnualProcurementPlan" xml:space="preserve">
+    <value>¿Se presenta el Plan  Anual de Compras?</value>
+  </data>
+  <data name="HasAnnualProcurementPlanDescription" xml:space="preserve">
+    <value>¿Se presenta el Plan  Anual de Compras?</value>
+  </data>
+  <data name="HasAnnualProcurementPlanRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta el Plan Anual de Compras</value>
+  </data>
+  <data name="HasApprovedYearBudget" xml:space="preserve">
+    <value>¿Se presenta el Presupuesto aprobado del año?</value>
+  </data>
+  <data name="HasApprovedYearBudgetDescription" xml:space="preserve">
+    <value>¿Se presenta el Presupuesto aprobado del año?</value>
+  </data>
+  <data name="HasApprovedYearBudgetExecution" xml:space="preserve">
+    <value>¿Se presenta la Ejecución del presupuesto aprobado del año?</value>
+  </data>
+  <data name="HasApprovedYearBudgetExecutionDescription" xml:space="preserve">
+    <value>¿Se presenta la Ejecución del presupuesto aprobado del año?</value>
+  </data>
+  <data name="HasApprovedYearBudgetExecutionRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Ejecución del presupuesto aprobado del año</value>
+  </data>
+  <data name="HasApprovedYearBudgetRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta el Presupuesto aprobado del año</value>
+  </data>
+  <data name="HasAssetDeclarations" xml:space="preserve">
+    <value>¿Se presentan las Declaraciones Juradas de Bienes de los sujetos obligados?</value>
+  </data>
+  <data name="HasAssetDeclarationsDescription" xml:space="preserve">
+    <value>¿Se presentan las Declaraciones Juradas de Bienes de los sujetos obligados?</value>
+  </data>
+  <data name="HasAssetDeclarationsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan las Declaraciones Juradas de Bienes de los sujetos obligados</value>
+  </data>
+  <data name="HasAuditReports" xml:space="preserve">
+    <value>¿Se presentan Informes de auditorias?</value>
+  </data>
+  <data name="HasAuditReportsDescription" xml:space="preserve">
+    <value>¿Se presentan Informes de auditorias?</value>
+  </data>
+  <data name="HasAuditReportsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Informes de auditorias</value>
+  </data>
+  <data name="HasBalanceSheet" xml:space="preserve">
+    <value>¿Se presenta el Balance general?</value>
+  </data>
+  <data name="HasBalanceSheetDescription" xml:space="preserve">
+    <value>¿Se presenta el Balance general?</value>
+  </data>
+  <data name="HasBalanceSheetRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta el Balance general</value>
+  </data>
+  <data name="HasBudgetReportsOnProgramsAndProjects" xml:space="preserve">
+    <value>¿Se presentan Informes de presupuesto sobre programas y proyectos?</value>
+  </data>
+  <data name="HasBudgetReportsOnProgramsAndProjectsDescription" xml:space="preserve">
+    <value>¿Se presentan Informes de presupuesto sobre programas y proyectos?</value>
+  </data>
+  <data name="HasBudgetReportsOnProgramsAndProjectsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Informes de presupuesto sobre programas y proyectos</value>
+  </data>
+  <data name="HasClassifiedInformation" xml:space="preserve">
+    <value>¿Se presenta la Información clasificada?</value>
+  </data>
+  <data name="HasClassifiedInformationDescription" xml:space="preserve">
+    <value>¿Se presenta la Información clasificada?</value>
+  </data>
+  <data name="HasClassifiedInformationRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Información clasificada</value>
+  </data>
+  <data name="HasEmergencyAndUrgentCases" xml:space="preserve">
+    <value>¿Se presentan Casos de emergencia y urgencias?</value>
+  </data>
+  <data name="HasEmergencyAndUrgentCasesDescription" xml:space="preserve">
+    <value>¿Se presentan Casos de emergencia y urgencias?</value>
+  </data>
+  <data name="HasEmergencyAndUrgentCasesRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Casos de emergencia y urgencias</value>
+  </data>
+  <data name="HasEmployeePayroll" xml:space="preserve">
+    <value>¿Se presenta la Nomina de empleados?</value>
+  </data>
+  <data name="HasEmployeePayrollDescription" xml:space="preserve">
+    <value>¿Se presenta la Nomina de empleados?</value>
+  </data>
+  <data name="HasEmployeePayrollRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Nomina de empleados</value>
+  </data>
+  <data name="HasExecutionCalendarOfProgramsAndProjects" xml:space="preserve">
+    <value>¿Se presentan Calendarios de ejecución de programas y proyectos?</value>
+  </data>
+  <data name="HasExecutionCalendarOfProgramsAndProjectsDescription" xml:space="preserve">
+    <value>¿Se presentan Calendarios de ejecución de programas y proyectos?</value>
+  </data>
+  <data name="HasExecutionCalendarOfProgramsAndProjectsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Calendarios de ejecución de programas y proyectos</value>
+  </data>
+  <data name="HasFixedAssetsRelation" xml:space="preserve">
+    <value>¿Se presenta la Relación de activos fijos de la Institución?</value>
+  </data>
+  <data name="HasFixedAssetsRelationDescription" xml:space="preserve">
+    <value>¿Se presenta la Relación de activos fijos de la Institución?</value>
+  </data>
+  <data name="HasFixedAssetsRelationRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Relación de activos fijos de la Institución</value>
+  </data>
+  <data name="HasFollowUpReportsOfProgramsAndProjects" xml:space="preserve">
+    <value>¿Se presentan Informes de seguimiento a los programas y proyectos?</value>
+  </data>
+  <data name="HasFollowUpReportsOfProgramsAndProjectsDescription" xml:space="preserve">
+    <value>¿Se presentan Informes de seguimiento a los programas y proyectos?</value>
+  </data>
+  <data name="HasFollowUpReportsOfProgramsAndProjectsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Informes de seguimiento a los programas y proyectos</value>
+  </data>
+  <data name="HasIncomeAndExpenseRelation" xml:space="preserve">
+    <value>¿Se presenta la Relación de Ingresos y Egresos?</value>
+  </data>
+  <data name="HasIncomeAndExpenseRelationDescription" xml:space="preserve">
+    <value>¿Se presenta la Relación de Ingresos y Egresos?</value>
+  </data>
+  <data name="HasIncomeAndExpenseRelationRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta presenta la Relación de Ingresos y Egresos</value>
+  </data>
+  <data name="HasInstitutionalStatistics" xml:space="preserve">
+    <value>¿Se presentan Estadísticas Institucionales?</value>
+  </data>
+  <data name="HasInstitutionalStatisticsDescription" xml:space="preserve">
+    <value>¿Se presentan Estadísticas Institucionales?</value>
+  </data>
+  <data name="HasInstitutionalStatisticsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Estadísticas Institucionales</value>
+  </data>
+  <data name="HasListOfProgramsAndProjects" xml:space="preserve">
+    <value>¿Se presenta la Descripción de los Programas y Proyectos?</value>
+  </data>
+  <data name="HasListOfProgramsAndProjectsDescription" xml:space="preserve">
+    <value>¿Se presenta la Descripción de los Programas y Proyectos?</value>
+  </data>
+  <data name="HasListOfProgramsAndProjectsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Descripción de los Programas y Proyectos</value>
+  </data>
+  <data name="HasListOfPurchasesAndContractsMadeAndApproved" xml:space="preserve">
+    <value>¿Se presenta la Lista de compras y contrataciones realizadas y aprobadas?</value>
+  </data>
+  <data name="HasListOfPurchasesAndContractsMadeAndApprovedDescription" xml:space="preserve">
+    <value>¿Se presenta la Lista de compras y contrataciones realizadas y aprobadas?</value>
+  </data>
+  <data name="HasListOfPurchasesAndContractsMadeAndApprovedRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Lista de compras y contrataciones realizadas y aprobadas</value>
+  </data>
+  <data name="HasMinorPurchases" xml:space="preserve">
+    <value>¿Se presentan Compras menores?</value>
+  </data>
+  <data name="HasMinorPurchasesDescription" xml:space="preserve">
+    <value>¿Se presentan Compras menores?</value>
+  </data>
+  <data name="HasMinorPurchasesRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Compras menores</value>
+  </data>
+  <data name="HasOAIOrganizationalStructure" xml:space="preserve">
+    <value>¿Se presenta la Estructura organizacional de la oficina de libre acceso a la información pública (OAI)?</value>
+  </data>
+  <data name="HasOAIOrganizationalStructureDescription" xml:space="preserve">
+    <value>¿Se presenta la Estructura organizacional de la oficina de libre acceso a la información pública (OAI)?</value>
+  </data>
+  <data name="HasOAIOrganizationalStructureRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la estructura organizacional de la oficina de libre acceso a la información pública (OAI)</value>
+  </data>
+  <data name="HasOAIOrganizationManual" xml:space="preserve">
+    <value>¿Se presenta el Manual de organización de la OAI?</value>
+  </data>
+  <data name="HasOAIOrganizationManualDescription" xml:space="preserve">
+    <value>¿Se presenta el Manual de organización de la OAI?</value>
+  </data>
+  <data name="HasOAIOrganizationManualRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta el Manual de organización de la OAI</value>
+  </data>
+  <data name="HasOAIProceduresManual" xml:space="preserve">
+    <value>¿Se presenta el Manual de Procedimientos de la OAI?</value>
+  </data>
+  <data name="HasOAIProceduresManualDescription" xml:space="preserve">
+    <value>¿Se presenta el Manual de Procedimientos de la OAI?</value>
+  </data>
+  <data name="HasOAIProceduresManualRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta el Manual de Procedimientos de la OAI</value>
+  </data>
+  <data name="HasInstitutionStrategicPlan" xml:space="preserve">
+    <value>¿Se presenta la Planificación estratégica de la OAI?</value>
+  </data>
+  <data name="HasInstitutionStrategicPlanDescription" xml:space="preserve">
+    <value>¿Se presenta la Planificación estratégica de la OAI?</value>
+  </data>
+  <data name="HasOAIStrategicPlanFollowUpReports" xml:space="preserve">
+    <value>¿Se presentan Informes de logros y/o seguimiento del Plan estratégico de la OAI?</value>
+  </data>
+  <data name="HasOAIStrategicPlanFollowUpReportsDescription" xml:space="preserve">
+    <value>¿Se presentan Informes de logros y/o seguimiento del Plan estratégico de la OAI?</value>
+  </data>
+  <data name="HasOAIStrategicPlanFollowUpReportsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Informes de logros y/o seguimiento del Plan estratégico de la OAI</value>
+  </data>
+  <data name="HasOAIStrategicPlanRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Planificación estratégica de la OAI</value>
+  </data>
+  <data name="HasOfficialPublications" xml:space="preserve">
+    <value>¿Se presentan Publicaciones Oficiales?</value>
+  </data>
+  <data name="HasOfficialPublicationsDescription" xml:space="preserve">
+    <value>¿Se presentan Publicaciones Oficiales?</value>
+  </data>
+  <data name="HasOfficialPublicationsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Publicaciones Oficiales</value>
+  </data>
+  <data name="HasPriceComparisons" xml:space="preserve">
+    <value>¿Se presentan Comparaciones de precios?</value>
+  </data>
+  <data name="HasPriceComparisonsDescription" xml:space="preserve">
+    <value>¿Se presentan Comparaciones de precios?</value>
+  </data>
+  <data name="HasPriceComparisonsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Comparaciones de precios</value>
+  </data>
+  <data name="HasPublicInformationRequestForm" xml:space="preserve">
+    <value>¿Se presenta el Formulario de solicitud de información publica?</value>
+  </data>
+  <data name="HasPublicInformationRequestFormDescription" xml:space="preserve">
+    <value>¿Se presenta el Formulario de solicitud de información publica?</value>
+  </data>
+  <data name="HasPublicInformationRequestFormRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta el Formulario de solicitud de información publica</value>
+  </data>
+  <data name="HasPublicServices" xml:space="preserve">
+    <value>¿Se presentan Servicios al Público?</value>
+  </data>
+  <data name="HasPublicServicesDescription" xml:space="preserve">
+    <value>¿Se presentan Servicios al Público?</value>
+  </data>
+  <data name="HasPublicServicesRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Servicios al Público</value>
+  </data>
+  <data name="HasPublicTenders" xml:space="preserve">
+    <value>¿Se presentan las Licitaciones Públicas?</value>
+  </data>
+  <data name="HasPublicTendersDescription" xml:space="preserve">
+    <value>¿Se presentan las Licitaciones Públicas?</value>
+  </data>
+  <data name="HasPublicTendersRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan las Licitaciones Públicas</value>
+  </data>
+  <data name="HasRAIContactInformation" xml:space="preserve">
+    <value>¿Se presenta el Nombre del Responsable de Acceso a la Información y los medios para contactarle?</value>
+  </data>
+  <data name="HasRAIContactInformationDescription" xml:space="preserve">
+    <value>¿Se presenta el Nombre del Responsable de Acceso a la Información y los medios para contactarle?</value>
+  </data>
+  <data name="HasRAIContactInformationRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta el Nombre del Responsable de Acceso a la Información y los medios para contactarle</value>
+  </data>
+  <data name="HasRestrictedTenders" xml:space="preserve">
+    <value>¿Se presentan las Licitaciones restringidas?</value>
+  </data>
+  <data name="HasRestrictedTendersDescription" xml:space="preserve">
+    <value>¿Se presentan las Licitaciones restringidas?</value>
+  </data>
+  <data name="HasRestrictedTendersRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan las Licitaciones restringidas</value>
+  </data>
+  <data name="HasRetirementAndPensions" xml:space="preserve">
+    <value>¿Se presentan las Jubilaciones, Pensiones y retiros?</value>
+  </data>
+  <data name="HasRetirementAndPensionsDescription" xml:space="preserve">
+    <value>¿Se presentan las Jubilaciones, Pensiones y retiros?</value>
+  </data>
+  <data name="HasRetirementAndPensionsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan las Jubilaciones, Pensiones y retiros</value>
+  </data>
+  <data name="HasStatementsOfSuppliers" xml:space="preserve">
+    <value>¿Se presentan Estados de cuentas de suplidores?</value>
+  </data>
+  <data name="HasStatementsOfSuppliersDescription" xml:space="preserve">
+    <value>¿Se presentan Estados de cuentas de suplidores?</value>
+  </data>
+  <data name="HasStatementsOfSuppliersRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan Estados de cuentas de suplidores</value>
+  </data>
+  <data name="HasStateProviderList" xml:space="preserve">
+    <value>¿Se presenta la Lista de proveedores del Estado?</value>
+  </data>
+  <data name="HasStateProviderListDescription" xml:space="preserve">
+    <value>¿Se presenta la Lista de proveedores del Estado?</value>
+  </data>
+  <data name="HasStateProviderListRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Lista de proveedores del Estado</value>
+  </data>
+  <data name="HasStateProviderRegistrationInstructions" xml:space="preserve">
+    <value>¿Se presentan las instrucciones sobre como registrarse como proveedor del Estado?</value>
+  </data>
+  <data name="HasStateProviderRegistrationInstructionsDescription" xml:space="preserve">
+    <value>¿Se presentan las instrucciones sobre como registrarse como proveedor del Estado?</value>
+  </data>
+  <data name="HasStateProviderRegistrationInstructionsRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan las instrucciones sobre como registrarse como proveedor del Estado</value>
+  </data>
+  <data name="HasVacancies" xml:space="preserve">
+    <value>¿Se presentan las Vacantes?</value>
+  </data>
+  <data name="HasVacanciesDescription" xml:space="preserve">
+    <value>¿Se presentan las Vacantes?</value>
+  </data>
+  <data name="HasVacanciesRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan las Vacantes</value>
+  </data>
+  <data name="HasWarehouseInventoryRelation" xml:space="preserve">
+    <value>¿Se presenta la Relación de inventario en Almacén?</value>
+  </data>
+  <data name="HasWarehouseInventoryRelationDescription" xml:space="preserve">
+    <value>¿Se presenta la Relación de inventario en Almacén?</value>
+  </data>
+  <data name="HasWarehouseInventoryRelationRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presenta la Relación de inventario en Almacén</value>
+  </data>
+  <data name="HasWorkSweepstakes" xml:space="preserve">
+    <value>¿Se presentan los Sorteos de Obras?</value>
+  </data>
+  <data name="HasWorkSweepstakesDescription" xml:space="preserve">
+    <value>¿Se presentan los Sorteos de Obras?</value>
+  </data>
+  <data name="HasWorkSweepstakesRequiredError" xml:space="preserve">
+    <value>Debe indicar si se presentan los Sorteos de Obras</value>
+  </data>
+  <data name="HasCitizenRightsNorms" xml:space="preserve">
+    <value>¿Se presentan las Normativas: Derechos de los Ciudadanos?</value>
+  </data>
+  <data name="HasCitizenRightsNormsDescription" xml:space="preserve">
+    <value>¿Se presentan las Normativas: Derechos de los Ciudadanos?</value>
+  </data>
+  <data name="HasCitizenRightsNormsRequiredError" xml:space="preserve">
+    <value>Debe señalar si se presentan las Normativas: Derechos de los Ciudadanos</value>
+  </data>
+  <data name="HasInstitutionOrganizationalStructure" xml:space="preserve">
+    <value>¿Se presenta la Estructura orgánica de la Institución?</value>
+  </data>
+  <data name="HasInstitutionOrganizationalStructureDescription" xml:space="preserve">
+    <value>¿Se presenta la Estructura orgánica de la Institución?</value>
+  </data>
+  <data name="HasInstitutionOrganizationalStructureRequiredError" xml:space="preserve">
+    <value>Debe señalar si se presenta la Estructura orgánica de la Institución</value>
+  </data>
+  <data name="HasInstitutionStrategicPlanRequiredError" xml:space="preserve">
+    <value>Debe señalar si se presenta el Plan Estratégico de la Institución</value>
+  </data>
+  <data name="InstitutionTransparencySectionEvaluation" xml:space="preserve">
+    <value>Evaluación de la Sección de Transparencia</value>
+  </data>
+  <data name="InstitutionTransparencySectionEvaluationDecrees" xml:space="preserve">
+    <value>Decretos</value>
+  </data>
+  <data name="InstitutionTransparencySectionEvaluationFreeAccessOffice" xml:space="preserve">
+    <value>Oficina de Libre Acceso a la Información</value>
+  </data>
+  <data name="InstitutionTransparencySectionEvaluationGeneralInformation" xml:space="preserve">
+    <value>Información General</value>
+  </data>
+  <data name="InstitutionTransparencySectionEvaluationLaws" xml:space="preserve">
+    <value>Leyes</value>
+  </data>
+  <data name="InstitutionTransparencySectionEvaluationLegalFramework" xml:space="preserve">
+    <value>Marco Legal del Sistema de Transparencia: Leyes y Decretos</value>
+  </data>
+  <data name="InstitutionTransparencySectionEvaluationLevel1" xml:space="preserve">
+    <value>Nivel I: Nivel Informacional</value>
+  </data>
+  <data name="InstitutionTransparencySectionEvaluationResolutions" xml:space="preserve">
+    <value>Resoluciones</value>
+  </data>
+  <data name="InstitutionTransparencySectionEvaluationStrategicPlan" xml:space="preserve">
+    <value>Plan estratégico de la institución</value>
+  </data>
+  <data name="DoesPublicEthicsCommitteeHaveApprovedActionPlan" xml:space="preserve">
+    <value>¿Tiene la Comisión de Ética Pública un plan de acción aprobado?</value>
+  </data>
+  <data name="DoesPublicEthicsCommitteeHaveApprovedActionPlanDescription" xml:space="preserve">
+    <value>¿Tiene la Comisión de Ética Pública un plan de acción aprobado?</value>
+  </data>
+  <data name="DoesPublicEthicsCommitteeHaveApprovedActionPlanRequiredError" xml:space="preserve">
+    <value>Debe indicar si la Comisión de Ética Pública tiene un plan de acción aprobado</value>
+  </data>
+  <data name="DoesTheInstitutionHaveAnApprovedEthicsCode" xml:space="preserve">
+    <value>¿Tiene la institución Código de Ética?</value>
+  </data>
+  <data name="DoesTheInstitutionHaveAnApprovedEthicsCodeDescription" xml:space="preserve">
+    <value>¿Tiene la institución Código de Ética?</value>
+  </data>
+  <data name="DoesTheInstitutionHaveAnApprovedEthicsCodeRequiredError" xml:space="preserve">
+    <value>Debe indicar si la institución tiene Código de Ética</value>
+  </data>
+  <data name="HasPublicEthicsCommitteeBeenSworn" xml:space="preserve">
+    <value>¿Ha sido juramentada la Comisión de Ética Pública?</value>
+  </data>
+  <data name="HasPublicEthicsCommitteeBeenSwornDescription" xml:space="preserve">
+    <value>¿Ha sido juramentada la Comisión de Ética Pública?</value>
+  </data>
+  <data name="HasPublicEthicsCommitteeBeenSwornRequiredError" xml:space="preserve">
+    <value>Debe indicar si ha sido juramentada la Comisión de Ética Pública</value>
+  </data>
+  <data name="EthicsComissionsDirectory" xml:space="preserve">
+    <value>Directorio de Comisiones de Ética</value>
+  </data>
+  <data name="IsCEPCoordinator" xml:space="preserve">
+    <value>¿Es coordinador de la Comisión de Ética Pública?</value>
+  </data>
+  <data name="IsCEPCoordinatorDescription" xml:space="preserve">
+    <value>¿Es coordinador de la Comisión de Ética Pública?</value>
+  </data>
+  <data name="IsCEPCoordinatorRequiredError" xml:space="preserve">
+    <value>Debe indicar si el servidor es coordinador de la Comisión de Ética Pública</value>
+  </data>
+  <data name="IsCEPSecretary" xml:space="preserve">
+    <value>¿Es secretario de la Comisión de Ética Pública?</value>
+  </data>
+  <data name="IsCEPSecretaryDescription" xml:space="preserve">
+    <value>¿Es secretario de la Comisión de Ética Pública?</value>
+  </data>
+  <data name="IsCEPSecretaryRequiredError" xml:space="preserve">
+    <value>Debe indicar si el servidor es secretario de la Comisión de Ética Pública</value>
+  </data>
+  <data name="ShouldSignTheEthicsCode" xml:space="preserve">
+    <value>¿Debe firmar el Código de Pautas Éticas?</value>
+  </data>
+  <data name="ShouldSignTheEthicsCodeDescription" xml:space="preserve">
+    <value>¿Debe firmar el Código de Pautas Éticas?</value>
+  </data>
+  <data name="ShouldSignTheEthicsCodeRequiredError" xml:space="preserve">
+    <value>Debe indicar si el servidor debe firmar el Código de Pautas Éticas</value>
+  </data>
+  <data name="CEPCoordinator" xml:space="preserve">
+    <value>Coordinador</value>
+  </data>
+  <data name="CEPMember" xml:space="preserve">
+    <value>Miembro</value>
+  </data>
+</root>

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1CC6D59B-300E-405C-9CA8-F2EBB8633525}</ProjectGuid>
+    <ProjectGuid>{C17EA2E0-5105-418A-A79E-7D23D1CEBF8D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ORM</RootNamespace>
-    <AssemblyName>ORM</AssemblyName>
+    <RootNamespace>Localization</RootNamespace>
+    <AssemblyName>Localization</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,14 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,38 +39,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DC_Maestros\Country.cs" />
-    <Compile Include="DC_Maestros\Institution.cs" />
-    <Compile Include="DC_Maestros\InstitutionType.cs" />
-    <Compile Include="DC_Maestros\Locality.cs" />
-    <Compile Include="Migrations\201502041607417_initial.cs" />
-    <Compile Include="Migrations\201502041607417_initial.Designer.cs">
-      <DependentUpon>201502041607417_initial.cs</DependentUpon>
+    <Compile Include="Class1.cs" />
+    <Compile Include="es-DO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>es-DO.resx</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DC_Maestros\Region.cs" />
-    <Compile Include="DC_Maestros\Sector.cs" />
-    <Compile Include="SIGEeLDBContext.cs" />
-    <Compile Include="DC_Maestros\StatePower.cs" />
-    <Compile Include="DC_Maestros\SubSector.cs" />
-    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="DC_Maestros\Readme.md" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201502041607417_initial.resx">
-      <DependentUpon>201502041607417_initial.cs</DependentUpon>
+    <EmbeddedResource Include="es-DO.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>es-DO.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Localization\Localization.csproj">
-      <Project>{c17ea2e0-5105-418a-a79e-7d23d1cebf8d}</Project>
-      <Name>Localization</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
