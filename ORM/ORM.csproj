@@ -46,20 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Country.cs" />
-    <Compile Include="InstitutionType.cs" />
-    <Compile Include="Locality.cs" />
+    <Compile Include="DC_Maestros\Country.cs" />
+    <Compile Include="DC_Maestros\Institution.cs" />
+    <Compile Include="DC_Maestros\InstitutionType.cs" />
+    <Compile Include="DC_Maestros\Locality.cs" />
     <Compile Include="Migrations\201502041607417_initial.cs" />
     <Compile Include="Migrations\201502041607417_initial.Designer.cs">
       <DependentUpon>201502041607417_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Region.cs" />
-    <Compile Include="Sector.cs" />
+    <Compile Include="DC_Maestros\Region.cs" />
+    <Compile Include="DC_Maestros\Sector.cs" />
     <Compile Include="SIGEeLDBContext.cs" />
-    <Compile Include="StatePower.cs" />
-    <Compile Include="SubSector.cs" />
+    <Compile Include="DC_Maestros\StatePower.cs" />
+    <Compile Include="DC_Maestros\SubSector.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,15 +1,30 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ORM
+namespace ORM.DC_Maestros
 {
     public class InstitutionType
     {
+        [Key]
+        public Guid InstitutionTypeId { get; set; }
+
+        [Required]
+        [DataType(DataType.Text)]
+        [MaxLength(50)]
+        public string InstitutionTypeName { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateEntered { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateModified { get; set; }
+        public Guid CreatedByUserId { get; set; }
+        public Guid ModifiedByUserId { get; set; }
+        
         public InstitutionType()
         {
 
@@ -37,24 +52,6 @@ namespace ORM
             this.ModifiedByUserId = new Guid(modifiedbyuserid);
         }
 
-
-        [Key]
-        public Guid InstitutionTypeId { get; set; }
-
-        [Required]
-        public string InstitutionTypeName { get; set; }
-
-        [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime DateEntered { get; set; }
-
-        [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime DateModified { get; set; }
-        public Guid CreatedByUserId { get; set; }
-        public Guid ModifiedByUserId { get; set; }
-
-
         public IEnumerable<InstitutionType> GetAll(SIGEeLDBContext e)
         {
             return (from c in e.InstitutionTypes
@@ -62,7 +59,7 @@ namespace ORM
                     select c);
         }
 
-        public InstitutionType GetInstitutionTypeId(SIGEeLDBContext e, string id)
+        public InstitutionType GetInstitutionTypeById(SIGEeLDBContext e, string id)
         {
             var query = (from c in e.InstitutionTypes
                          where c.InstitutionTypeId == new Guid(id)

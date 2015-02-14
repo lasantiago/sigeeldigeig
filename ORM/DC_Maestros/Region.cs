@@ -1,15 +1,37 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ORM
+namespace ORM.DC_Maestros
 {
     public class Region
     {
+        [Key]
+        public Guid RegionId { get; set; }
+
+        [Required]
+        [DataType(DataType.Text)]
+        [MaxLength(50)]
+        public string RegionName { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateEntered { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateModified { get; set; }
+
+        [Required]
+        [ForeignKey("CountryId")]
+        public Country Country { get; set; }
+
+        public Guid CountryId { get; set; }
+
+        public Guid CreatedByUserId { get; set; }
+        public Guid ModifiedByUserId { get; set; }
         public Region()
         {
 
@@ -44,29 +66,6 @@ namespace ORM
             this.Country = c;
             this.CountryId = this.Country.CountryId;
         }
-
-        [Key]
-        public Guid RegionId { get; set; }
-
-        [Required]
-        public string RegionName { get; set; }
-
-        [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime DateEntered { get; set; }
-
-        [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime DateModified { get; set; }
-
-        [Required]
-        [ForeignKey("CountryId")]
-        public Country Country { get; set; }
-
-        public Guid CountryId { get; set; }
-
-        public Guid CreatedByUserId { get; set; }
-        public Guid ModifiedByUserId { get; set; }
 
         public IEnumerable<Region> GetAll(SIGEeLDBContext e)
         {

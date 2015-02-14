@@ -1,15 +1,36 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ORM
+namespace ORM.DC_Maestros
 {
     public class Locality
     {
+        [Key]
+        public Guid LocalityId { get; set; }
+
+        [Required]
+        [DataType(DataType.Text)]
+        [MaxLength(50)]
+        public string LocalityName { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateEntered { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateModified { get; set; }
+
+        [Required]
+        [ForeignKey("RegionId")]
+        public Region Region { get; set; }
+
+        public Guid RegionId { get; set; }
+        public Guid CreatedByUserId { get; set; }
+        public Guid ModifiedByUserId { get; set; }
         public Locality()
         {
 
@@ -43,28 +64,6 @@ namespace ORM
             this.Region = r;
             this.RegionId = this.Region.RegionId;
         }
-
-        [Key]
-        public Guid LocalityId { get; set; }
-
-        [Required]
-        public string LocalityName { get; set; }
-
-        [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime DateEntered { get; set; }
-
-        [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime DateModified { get; set; }
-
-        [Required]
-        [ForeignKey("RegionId")]
-        public Region Region { get; set; }
-
-        public Guid RegionId { get; set; }
-        public Guid CreatedByUserId { get; set; }
-        public Guid ModifiedByUserId { get; set; }
 
         public IEnumerable<Locality> GetAll(SIGEeLDBContext e)
         {

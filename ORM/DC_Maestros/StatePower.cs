@@ -1,15 +1,29 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ORM
+namespace ORM.DC_Maestros
 {
     public class StatePower
     {
+        [Key]
+        public Guid StatePowerId { get; set; }
+
+        [Required]
+        [DataType(DataType.Text)]
+        [MaxLength(50)]
+        public string StatePowerName { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateEntered { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        public DateTime DateModified { get; set; }
+        public Guid CreatedByUserId { get; set; }
+        public Guid ModifiedByUserId { get; set; }
         public StatePower()
         {
 
@@ -36,23 +50,6 @@ namespace ORM
             this.CreatedByUserId = new Guid(createdbyuserid);
             this.ModifiedByUserId = new Guid(modifiedbyuserid);
         }
-
-        [Key]
-        public Guid StatePowerId { get; set; }
-
-        [Required]
-        public string StatePowerName { get; set; }
-
-        [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime DateEntered { get; set; }
-
-        [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime DateModified { get; set; }
-        public Guid CreatedByUserId { get; set; }
-        public Guid ModifiedByUserId { get; set; }
-
 
         public IEnumerable<StatePower> GetAll(SIGEeLDBContext e)
         {
