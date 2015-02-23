@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 
 namespace ORM.DC_Maestros
@@ -19,16 +20,30 @@ namespace ORM.DC_Maestros
         [MaxLength(50)]
         public string CountryName { get; set; }
 
-        [Required]
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "DateEnteredRequiredError")]
         [DataType(DataType.DateTime)]
+        [Display(Name = "DateEntered", ResourceType = typeof(@Localization.es_DO), Description = "DateEnteredDescription")]
         public DateTime DateEntered { get; set; }
 
-        [Required]
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "DateModifiedRequiredError")]
         [DataType(DataType.DateTime)]
+        [Display(Name = "DateModified", ResourceType = typeof(@Localization.es_DO), Description = "DateModifiedDescription")]
         public DateTime DateModified { get; set; }
 
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "CreatedByUserIdRequiredError")]
+        [DataType(DataType.Text)]
+        [Display(Name = "CreatedByUserId", ResourceType = typeof(Localization.es_DO), Description = "CreatedByUserIdDescription")]
         public Guid CreatedByUserId { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "ModifiedByUserIdRequiredError")]
+        [DataType(DataType.Text)]
+        [Display(Name = "ModifiedByUserId", ResourceType = typeof(Localization.es_DO), Description = "ModifiedByUserIdDescription")]
         public Guid ModifiedByUserId { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "AssignedToUserIdRequiredError")]
+        [DataType(DataType.Text)]
+        [Display(Name = "AssignedToUserId", ResourceType = typeof(Localization.es_DO), Description = "AssignedToUserIdDescription")]
+        public Guid AssignedToUserId { get; set; }
         
         public Country()
         {
@@ -45,6 +60,8 @@ namespace ORM.DC_Maestros
             this.DateEntered = DateTime.Now;
             this.DateModified = DateTime.Now;
             this.CreatedByUserId = new Guid(userid);
+            this.ModifiedByUserId = new Guid(userid);
+            this.AssignedToUserId = new Guid(userid); 
         }
 
         /// <summary>
@@ -54,15 +71,18 @@ namespace ORM.DC_Maestros
         /// <param name="countryname">Name of the country</param>
         /// <param name="userid">User that creates the country</param>
         /// <param name="s">DBContext</param>
-        public Country(string id, string countryname, DateTime dateentered, DateTime datemodified)
+        public Country(string id, string countryname, DateTime dateentered, DateTime datemodified, string userid)
         {
             this.CountryId = new Guid(id);
             this.CountryName = countryname;
             this.DateEntered = dateentered;
             this.DateModified = datemodified;
+            this.CreatedByUserId = new Guid(userid);
+            this.ModifiedByUserId = new Guid(userid);
+            this.AssignedToUserId = new Guid(userid);
         }
 
-        public Country(string id, string countryname, DateTime dateentered, DateTime datemodified, string createdbyuserid, string modifiedbyuserid)
+        public Country(string id, string countryname, DateTime dateentered, DateTime datemodified, string createdbyuserid, string modifiedbyuserid, string assignedtouserid)
         {
             this.CountryId = new Guid(id);
             this.CountryName = countryname;
@@ -70,6 +90,7 @@ namespace ORM.DC_Maestros
             this.DateModified = datemodified;
             this.CreatedByUserId = new Guid(createdbyuserid);
             this.ModifiedByUserId = new Guid(modifiedbyuserid);
+            this.AssignedToUserId = new Guid(assignedtouserid);
         }
 
         public IEnumerable<Country> GetAll(SIGEeLDBContext e)

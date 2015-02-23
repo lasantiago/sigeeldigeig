@@ -20,20 +20,30 @@ namespace ORM.DC_Maestros
         public string LocalityName { get; set; }
 
         [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime DateEntered { get; set; }
-
-        [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime DateModified { get; set; }
-
-        [Required]
         [ForeignKey("RegionId")]
         public Region Region { get; set; }
 
         public Guid RegionId { get; set; }
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "DateEnteredRequiredError")]
+        [DataType(DataType.DateTime)]
+        [Display(Name = "DateEntered", ResourceType = typeof(@Localization.es_DO), Description = "DateEnteredDescription")]
+        public DateTime DateEntered { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "DateModifiedRequiredError")]
+        [DataType(DataType.DateTime)]
+        [Display(Name = "DateModified", ResourceType = typeof(@Localization.es_DO), Description = "DateModifiedDescription")]
+        public DateTime DateModified { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "CreatedByUserIdRequiredError")]
+        [DataType(DataType.Text)]
+        [Display(Name = "CreatedByUserId", ResourceType = typeof(Localization.es_DO), Description = "CreatedByUserIdDescription")]
         public Guid CreatedByUserId { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "ModifiedByUserIdRequiredError")]
+        [DataType(DataType.Text)]
+        [Display(Name = "ModifiedByUserId", ResourceType = typeof(Localization.es_DO), Description = "ModifiedByUserIdDescription")]
         public Guid ModifiedByUserId { get; set; }
+        
         public Locality()
         {
 

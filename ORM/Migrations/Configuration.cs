@@ -13,13 +13,12 @@ namespace ORM.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
             AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(ORM.SIGEeLDBContext context)
         {
-            //DEFAULT Creation Date for base records
             DateTime dateentered = new DateTime(2012, 08, 26);
 
             #region Users
@@ -33,21 +32,69 @@ namespace ORM.Migrations
             // Adds all base users to the context 
             users.ForEach(us => context.Users.AddOrUpdate(usr => usr.UserName, us));
 
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (DbEntityValidationException ex)
+            {
+                StringBuilder sb = new StringBuilder();
+
+                foreach (var failure in ex.EntityValidationErrors)
+                {
+                    sb.AppendFormat("{0} failed validation\n", failure.Entry.Entity.GetType());
+                    foreach (var error in failure.ValidationErrors)
+                    {
+                        sb.AppendFormat("- {0} : {1}", error.PropertyName, error.ErrorMessage);
+                        sb.AppendLine();
+                    }
+                }
+
+                throw new DbEntityValidationException(
+                    "Entity Validation Failed - errors follow:\n" +
+                    sb.ToString(), ex
+                ); // Add the original exception as the innerException
+            }
 
             #endregion
 
             // DEFAULT UserId for base records
             Guid createdbyuserid = new User().GetUserByUserName(context, "admin").UserId;
             Guid modifiedbyuserid = createdbyuserid;
+            Guid assignedtouserid = createdbyuserid;
 
             #region Country
 
             var countries = new List<Country>
             {
-                new Country{CountryId = new Guid("8EB0B763-D8F3-441B-A177-98E51179FA19"), CountryName = "República Dominicana", DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid} 
+                new Country{CountryId = new Guid("8EB0B763-D8F3-441B-A177-98E51179FA19"), CountryName = "República Dominicana", DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid, AssignedToUserId = assignedtouserid} 
             };
 
             countries.ForEach(co => context.Countries.AddOrUpdate(country => country.CountryName, co));
+
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (DbEntityValidationException ex)
+            {
+                StringBuilder sb = new StringBuilder();
+
+                foreach (var failure in ex.EntityValidationErrors)
+                {
+                    sb.AppendFormat("{0} failed validation\n", failure.Entry.Entity.GetType());
+                    foreach (var error in failure.ValidationErrors)
+                    {
+                        sb.AppendFormat("- {0} : {1}", error.PropertyName, error.ErrorMessage);
+                        sb.AppendLine();
+                    }
+                }
+
+                throw new DbEntityValidationException(
+                    "Entity Validation Failed - errors follow:\n" +
+                    sb.ToString(), ex
+                ); // Add the original exception as the innerException
+            }
 
             #endregion
 
@@ -96,6 +143,30 @@ namespace ORM.Migrations
 
             // Adds all base regions to the context 
             regions.ForEach(re => context.Regions.AddOrUpdate(reg => reg.RegionName, re));
+
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (DbEntityValidationException ex)
+            {
+                StringBuilder sb = new StringBuilder();
+
+                foreach (var failure in ex.EntityValidationErrors)
+                {
+                    sb.AppendFormat("{0} failed validation\n", failure.Entry.Entity.GetType());
+                    foreach (var error in failure.ValidationErrors)
+                    {
+                        sb.AppendFormat("- {0} : {1}", error.PropertyName, error.ErrorMessage);
+                        sb.AppendLine();
+                    }
+                }
+
+                throw new DbEntityValidationException(
+                    "Entity Validation Failed - errors follow:\n" +
+                    sb.ToString(), ex
+                ); // Add the original exception as the innerException
+            }
 
             #endregion
 
@@ -181,13 +252,12 @@ namespace ORM.Migrations
                 new Locality{LocalityId = new Guid("771e96db-d686-2b6c-47c2-5256d5e967b9"), LocalityName = "TABARA ABAJO (DM)", RegionId = regionidazua,DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
                 new Locality{LocalityId = new Guid("eac9d6e9-5860-51fd-633b-5256d5d39e7b"), LocalityName = "TABARA ARRIBA", RegionId = regionidazua,DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
                 new Locality{LocalityId = new Guid("63cc260c-3dca-2cbf-aab8-5256d58bb065"), LocalityName = "VILLARPANDO (DM)", RegionId = regionidazua,DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
-                new Locality{LocalityId = new Guid("63cc260c-3dca-2cbf-aab8-5256d58bb065"), LocalityName = "VILLARPANDO (DM)", RegionId = regionidazua,DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
             
             #endregion
 
             #region Bahoruco
 
-                new Locality{LocalityId = new Guid("63cc260c-3dca-2cbf-aab8-5256d58bb065"), LocalityName = "CABEZA DE TORO (DM)", RegionId = regionidbahoruco,DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
+                new Locality{LocalityId = new Guid("cc264d9e-1897-e0fc-6338-5256d5d81935"), LocalityName = "CABEZA DE TORO (DM)", RegionId = regionidbahoruco,DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
                 new Locality{LocalityId = new Guid("5819b432-cfa8-e027-9fd7-5256d584efea"), LocalityName = "EL PALMAR (DM)", RegionId = regionidbahoruco,DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
                 new Locality{LocalityId = new Guid("c1319121-0e9b-1426-3876-5256d5029468"), LocalityName = "EL SALADO", RegionId = regionidbahoruco,DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
                 new Locality{LocalityId = new Guid("b6bf91d4-dcfa-aa78-6455-5256d516271c"), LocalityName = "GALVAN", RegionId = regionidbahoruco,DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
@@ -271,7 +341,6 @@ namespace ORM.Migrations
                 new Locality{LocalityId = new Guid("4c2357ca-c3d6-a5cc-46b8-5256d58d1d69"), LocalityName = "SABANA GRANDE (DM)", RegionId = regionidduarte, DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
                 new Locality{LocalityId = new Guid("62326e32-90a5-45f5-4fc0-5256d57d8c22"), LocalityName = "SAN FRANCISCO DE MACORIS", RegionId = regionidduarte, DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
                 new Locality{LocalityId = new Guid("5f2fad5e-abae-8542-c661-5256d5327cd2"), LocalityName = "VILLA RIVA", RegionId = regionidduarte, DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
-                new Locality{LocalityId = new Guid("5f2fad5e-abae-8542-c661-5256d5327cd2"), LocalityName = "VILLA RIVA", RegionId = regionidduarte, DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
 
             #endregion
 
@@ -283,7 +352,6 @@ namespace ORM.Migrations
                 new Locality{LocalityId = new Guid("a1a89dc8-7ade-9ce3-0433-5256d5224336"), LocalityName = "MICHES", RegionId = regionidelseibo, DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
                 new Locality{LocalityId = new Guid("6219042f-1e37-6235-94d2-5256d5e91913"), LocalityName = "PEDRO SANCHEZ (DM)", RegionId = regionidelseibo, DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
                 new Locality{LocalityId = new Guid("754547de-9017-ee09-0e2d-5256d59ca06c"), LocalityName = "SAN FRANCISCO-VICENTILLO (DM)", RegionId = regionidelseibo, DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
-                new Locality{LocalityId = new Guid("cdfef2c9-f593-1ece-5772-5256d5219276"), LocalityName = "SANTA LUCIA-LA HIGUERA (DM)", RegionId = regionidelseibo, DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
                 new Locality{LocalityId = new Guid("cdfef2c9-f593-1ece-5772-5256d5219276"), LocalityName = "SANTA LUCIA-LA HIGUERA (DM)", RegionId = regionidelseibo, DateEntered = dateentered, DateModified = DateTime.Now, CreatedByUserId = createdbyuserid, ModifiedByUserId = modifiedbyuserid},
 
             #endregion
@@ -679,9 +747,33 @@ namespace ORM.Migrations
             };
 
             // Adds all base regions to the context 
-            localities.ForEach(loc => context.Localities.AddOrUpdate(lo => lo.LocalityName, loc));
+            localities.ForEach(loc => context.Localities.AddOrUpdate(loca => new { loca.LocalityName, loca.RegionId }, loc));
 
             #endregion
+
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (DbEntityValidationException ex)
+            {
+                StringBuilder sb = new StringBuilder();
+
+                foreach (var failure in ex.EntityValidationErrors)
+                {
+                    sb.AppendFormat("{0} failed validation\n", failure.Entry.Entity.GetType());
+                    foreach (var error in failure.ValidationErrors)
+                    {
+                        sb.AppendFormat("- {0} : {1}", error.PropertyName, error.ErrorMessage);
+                        sb.AppendLine();
+                    }
+                }
+
+                throw new DbEntityValidationException(
+                    "Entity Validation Failed - errors follow:\n" +
+                    sb.ToString(), ex
+                ); // Add the original exception as the innerException
+            }
 
             #region StatePowers
 

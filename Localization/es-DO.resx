@@ -2097,4 +2097,64 @@
   <data name="CEPMember" xml:space="preserve">
     <value>Miembro</value>
   </data>
+  <data name="CreatedByUserId" xml:space="preserve">
+    <value>Creado por</value>
+  </data>
+  <data name="CreatedByUserIdDescription" xml:space="preserve">
+    <value>Usuario que crea el registro</value>
+  </data>
+  <data name="CreatedByUserIdRequiredError" xml:space="preserve">
+    <value>El usuario que crea el registro es requerido</value>
+  </data>
+  <data name="DateEntered" xml:space="preserve">
+    <value>Fecha de creación</value>
+  </data>
+  <data name="DateEnteredDescription" xml:space="preserve">
+    <value>Fecha de creación del registro</value>
+  </data>
+  <data name="DateEnteredRequiredError" xml:space="preserve">
+    <value>La fecha de creación es requerida</value>
+  </data>
+  <data name="DateModified" xml:space="preserve">
+    <value>Última fecha de modificación</value>
+  </data>
+  <data name="DateModifiedDescription" xml:space="preserve">
+    <value>Última fecha de modificación del registro</value>
+  </data>
+  <data name="DateModifiedRequiredError" xml:space="preserve">
+    <value>La fecha de modificación es requerida</value>
+  </data>
+  <data name="ModifiedByUserId" xml:space="preserve">
+    <value>Modificado por</value>
+  </data>
+  <data name="ModifiedByUserIdDescription" xml:space="preserve">
+    <value>Usuario que modifica el registro</value>
+  </data>
+  <data name="ModifiedByUserIdRequiredError" xml:space="preserve">
+    <value>El usuario que modifica el registro es requerido</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>SIGEeL-DIGEIG</value>
+  </data>
+  <data name="ApplicationNameLong" xml:space="preserve">
+    <value>Sistema Integrado de Gestión Electrónica - DIGEIG</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Iniciar sesión</value>
+  </data>
+  <data name="LoginScreenMessage" xml:space="preserve">
+    <value>Utilice su usuario y contraseña para iniciar sesión</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
+  <data name="AssignedToUserId" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="AssignedToUserIdDescription" xml:space="preserve">
+    <value>Usuario al que ha sido asignado el registro</value>
+  </data>
+  <data name="AssignedToUserIdRequiredError" xml:space="preserve">
+    <value>El usuario al que ha sido asignado el registro es requerido</value>
+  </data>
 </root>
