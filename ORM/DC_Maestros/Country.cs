@@ -13,16 +13,19 @@ namespace ORM.DC_Maestros
     {
 
         [Key]
+        [Display(Name = "CountryName", ResourceType = typeof(@Localization.es_DO), Description = "CountryNameDescription")]
         public Guid CountryId { get; set; }
 
-        [Required]
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "CountryNameRequiredError")]
         [DataType(DataType.Text)]
-        [MaxLength(50)]
+        [Display(Name = "CountryName", ResourceType = typeof(@Localization.es_DO), Description = "CountryNameDescription")]
+        [StringLength(50, MinimumLength = 3, ErrorMessageResourceType = typeof(@Localization.es_DO), ErrorMessageResourceName = "CountryNameLengthError")]
         public string CountryName { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "DateEnteredRequiredError")]
         [DataType(DataType.DateTime)]
         [Display(Name = "DateEntered", ResourceType = typeof(@Localization.es_DO), Description = "DateEnteredDescription")]
+        
         public DateTime DateEntered { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "DateModifiedRequiredError")]
@@ -44,9 +47,12 @@ namespace ORM.DC_Maestros
         [DataType(DataType.Text)]
         [Display(Name = "AssignedToUserId", ResourceType = typeof(Localization.es_DO), Description = "AssignedToUserIdDescription")]
         public Guid AssignedToUserId { get; set; }
+
+        public virtual string AssignedToUser { get; set; }
         
         public Country()
         {
+
         }
         /// <summary>
         /// Creates a new country and asigns a new guid automatically. To be used when inserting a new country to the database

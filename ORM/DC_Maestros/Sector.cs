@@ -13,9 +13,10 @@ namespace ORM.DC_Maestros
         [Key]
         public Guid SectorId { get; set; }
 
-        [Required]
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "SectorNameRequiredError")]
         [DataType(DataType.Text)]
-        [MaxLength(50)]
+        [Display(Name = "SectorName", ResourceType = typeof(@Localization.es_DO), Description = "SectorNameDescription")]
+        [StringLength(50, MinimumLength = 3, ErrorMessageResourceType = typeof(@Localization.es_DO), ErrorMessageResourceName = "SectorNameLengthError")]
         public string SectorName { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "DateEnteredRequiredError")]
@@ -37,6 +38,12 @@ namespace ORM.DC_Maestros
         [DataType(DataType.Text)]
         [Display(Name = "ModifiedByUserId", ResourceType = typeof(Localization.es_DO), Description = "ModifiedByUserIdDescription")]
         public Guid ModifiedByUserId { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "AssignedToUserIdRequiredError")]
+        [DataType(DataType.Text)]
+        [Display(Name = "AssignedToUserId", ResourceType = typeof(Localization.es_DO), Description = "AssignedToUserIdDescription")]
+        public Guid AssignedToUserId { get; set; }
+
         public Sector()
         {
 

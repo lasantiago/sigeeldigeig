@@ -13,9 +13,10 @@ namespace ORM.DC_Maestros
         [Key]
         public Guid StatePowerId { get; set; }
 
-        [Required]
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "StatePowerNameRequiredError")]
         [DataType(DataType.Text)]
-        [MaxLength(50)]
+        [Display(Name = "Name", ResourceType = typeof(@Localization.es_DO), Description = "StatePowerNameDescription")]
+        [StringLength(50, MinimumLength = 3, ErrorMessageResourceType = typeof(@Localization.es_DO), ErrorMessageResourceName = "StatePowerNameLengthError")]
         public string StatePowerName { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "DateEnteredRequiredError")]
@@ -37,6 +38,12 @@ namespace ORM.DC_Maestros
         [DataType(DataType.Text)]
         [Display(Name = "ModifiedByUserId", ResourceType = typeof(Localization.es_DO), Description = "ModifiedByUserIdDescription")]
         public Guid ModifiedByUserId { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "AssignedToUserIdRequiredError")]
+        [DataType(DataType.Text)]
+        [Display(Name = "AssignedToUserId", ResourceType = typeof(Localization.es_DO), Description = "AssignedToUserIdDescription")]
+        public Guid AssignedToUserId { get; set; }
+
         public StatePower()
         {
 
@@ -54,7 +61,7 @@ namespace ORM.DC_Maestros
             this.StatePowerName = statepowername;
         }
 
-        public StatePower(string id, string statepowername, DateTime dateentered, DateTime datemodified, string createdbyuserid, string modifiedbyuserid)
+        public StatePower(string id, string statepowername, DateTime dateentered, DateTime datemodified, string createdbyuserid, string modifiedbyuserid, string assignedtouserid)
         {
             this.StatePowerId = new Guid(id);
             this.StatePowerName = statepowername;
@@ -62,6 +69,11 @@ namespace ORM.DC_Maestros
             this.DateModified = datemodified;
             this.CreatedByUserId = new Guid(createdbyuserid);
             this.ModifiedByUserId = new Guid(modifiedbyuserid);
+            this.AssignedToUserId = new Guid(assignedtouserid);
+
+            //this.CreatedByUser = new User().GetUserById(context, createdbyuserid);
+            //this.ModifiedByUser = new User().GetUserById(context, modifiedbyuserid);
+            //this.AssignedToUser = new User().GetUserById(context, AssignedToUserId);
         }
 
         public IEnumerable<StatePower> GetAll(SIGEeLDBContext e)

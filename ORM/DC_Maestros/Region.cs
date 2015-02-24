@@ -14,15 +14,17 @@ namespace ORM.DC_Maestros
         [Key]
         public Guid RegionId { get; set; }
 
-        [Required]
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "RegionNameRequiredError")]
         [DataType(DataType.Text)]
-        [MaxLength(50)]
+        [Display(Name = "RegionName", ResourceType = typeof(@Localization.es_DO), Description = "RegionNameDescription")]
+        [StringLength(50, MinimumLength = 3, ErrorMessageResourceType = typeof(@Localization.es_DO), ErrorMessageResourceName = "RegionNameLengthError")]
         public string RegionName { get; set; }
 
         [Required]
         [ForeignKey("CountryId")]
         public Country Country { get; set; }
 
+        [Display(Name = "CountryName", ResourceType = typeof(@Localization.es_DO), Description = "CountryNameDescription")]
         public Guid CountryId { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "DateEnteredRequiredError")]
@@ -44,6 +46,12 @@ namespace ORM.DC_Maestros
         [DataType(DataType.Text)]
         [Display(Name = "ModifiedByUserId", ResourceType = typeof(Localization.es_DO), Description = "ModifiedByUserIdDescription")]
         public Guid ModifiedByUserId { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "AssignedToUserIdRequiredError")]
+        [DataType(DataType.Text)]
+        [Display(Name = "AssignedToUserId", ResourceType = typeof(Localization.es_DO), Description = "AssignedToUserIdDescription")]
+        public Guid AssignedToUserId { get; set; }
+
         public Region()
         {
 

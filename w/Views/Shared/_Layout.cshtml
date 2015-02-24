@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@Localization.es_DO.ApplicationName - [@ViewBag.Title]</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Scripts/app/app.js")
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink(@Localization.es_DO.ApplicationName, "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">@Html.ActionLink(@Localization.es_DO.Home, "Index", "Home", new { area = "" }, null)</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">@Localization.es_DO.DC_Maestros <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink(@Localization.es_DO.Institutions, "Index", "Institutions", new { area = "" }, null)</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink(@Localization.es_DO.InstitutionTypes, "Index", "InstitutionTypes", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink(@Localization.es_DO.Sectors, "Index", "Sectors", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink(@Localization.es_DO.Subsectors, "Index", "SubSectors", new { area = "" }, null)</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink(@Localization.es_DO.Countries, "Index", "Countries", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink(@Localization.es_DO.Regions, "Index", "Regions", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink(@Localization.es_DO.Localities, "Index", "Localities", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink(@Localization.es_DO.StatePowers, "Index", "StatePowers", new { area = "" }, null)</li>
+                        </ul>
+                    </li>
+                </ul>
+                @*<form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>*@
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink(@Localization.es_DO.ApplicationName, "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
+                        <li>@Html.ActionLink(@Localization.es_DO.DC_Maestros, "Index", "Home", new { area = "" }, null)</li>
+                        <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>*@
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="row-fluid marketing">
+
+                <div class="span6">
+                    &copy;  @System.DateTime.Now.ToString("yyyy") <a class="brand" href="@Url.Action("Index", "Home")">@Localization.es_DO.ApplicationNameLong </a><br />
+                    <a class="brand" href="@Url.Action("Index", "Home")">@Localization.es_DO.InstitutionName </a> <br />
+                    @Html.Raw(@Localization.es_DO.InstitutionAddress)
+                </div>
+                <div class="span6"><a href="@Url.Action("TermsOfUse", "About")">@Localization.es_DO.TermsOfUse</a> | <a href="@Url.Action("PrivacyStatement", "About")">@Localization.es_DO.PrivacyStatement</a> |  <a href="@Url.Action("FAQ", "About")">@Localization.es_DO.FAQ</a></div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

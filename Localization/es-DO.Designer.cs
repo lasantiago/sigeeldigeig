@@ -205,6 +205,15 @@ namespace Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ¿Está seguro que desea borrar este registro?.
+        /// </summary>
+        public static string Actions_DeleteConfirmation {
+            get {
+                return ResourceManager.GetString("Actions_DeleteConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Detalles.
         /// </summary>
         public static string Actions_Details {
@@ -1303,6 +1312,51 @@ namespace Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Países.
+        /// </summary>
+        public static string Countries {
+            get {
+                return ResourceManager.GetString("Countries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to País.
+        /// </summary>
+        public static string Country {
+            get {
+                return ResourceManager.GetString("Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to País.
+        /// </summary>
+        public static string CountryName {
+            get {
+                return ResourceManager.GetString("CountryName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El nombre del país no puede ser menor a 3, ni mayor a 50 caracteres.
+        /// </summary>
+        public static string CountryNameLengthError {
+            get {
+                return ResourceManager.GetString("CountryNameLengthError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El nombre del país es requerido.
+        /// </summary>
+        public static string CountryNameRequiredError {
+            get {
+                return ResourceManager.GetString("CountryNameRequiredError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Creado por.
         /// </summary>
         public static string CreatedByUserId {
@@ -1380,6 +1434,15 @@ namespace Localization {
         public static string DateModifiedRequiredError {
             get {
                 return ResourceManager.GetString("DateModifiedRequiredError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DC - Maestros.
+        /// </summary>
+        public static string DC_Maestros {
+            get {
+                return ResourceManager.GetString("DC_Maestros", resourceCulture);
             }
         }
         
@@ -4291,6 +4354,15 @@ namespace Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Instituciones en este Poder del Estado.
+        /// </summary>
+        public static string InstitutionsInThisStatePower {
+            get {
+                return ResourceManager.GetString("InstitutionsInThisStatePower", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Poder del Estado.
         /// </summary>
         public static string InstitutionStatePowerDescription {
@@ -5056,6 +5128,60 @@ namespace Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Municipios.
+        /// </summary>
+        public static string Localities {
+            get {
+                return ResourceManager.GetString("Localities", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Municipios de esta provincia.
+        /// </summary>
+        public static string LocalitiesOfThisRegion {
+            get {
+                return ResourceManager.GetString("LocalitiesOfThisRegion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Municipio.
+        /// </summary>
+        public static string LocalityName {
+            get {
+                return ResourceManager.GetString("LocalityName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nombre del municipio.
+        /// </summary>
+        public static string LocalityNameDescription {
+            get {
+                return ResourceManager.GetString("LocalityNameDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El nombre del municipio no debe ser menor a 3 ni mayor de 50 caracteres.
+        /// </summary>
+        public static string LocalityNameLengthError {
+            get {
+                return ResourceManager.GetString("LocalityNameLengthError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El nombre del municipio es requerido.
+        /// </summary>
+        public static string LocalityNameRequiredError {
+            get {
+                return ResourceManager.GetString("LocalityNameRequiredError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Iniciar sesión.
         /// </summary>
         public static string Login {
@@ -5560,6 +5686,60 @@ namespace Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Región.
+        /// </summary>
+        public static string Region {
+            get {
+                return ResourceManager.GetString("Region", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provincia.
+        /// </summary>
+        public static string RegionName {
+            get {
+                return ResourceManager.GetString("RegionName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El nombre de la provincia debe ser de un mínimo de 3 y un máximo de 50 caracteres.
+        /// </summary>
+        public static string RegionNameLengthError {
+            get {
+                return ResourceManager.GetString("RegionNameLengthError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El nombre de la provincia es requerido.
+        /// </summary>
+        public static string RegionNameRequiredError {
+            get {
+                return ResourceManager.GetString("RegionNameRequiredError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provincias.
+        /// </summary>
+        public static string Regions {
+            get {
+                return ResourceManager.GetString("Regions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provincias de este país.
+        /// </summary>
+        public static string RegionsOfThisCountry {
+            get {
+                return ResourceManager.GetString("RegionsOfThisCountry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Registrarse.
         /// </summary>
         public static string Register {
@@ -5583,6 +5763,15 @@ namespace Localization {
         public static string Sector {
             get {
                 return ResourceManager.GetString("Sector", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sector.
+        /// </summary>
+        public static string SectorName {
+            get {
+                return ResourceManager.GetString("SectorName", resourceCulture);
             }
         }
         
@@ -5970,6 +6159,24 @@ namespace Localization {
         public static string StreetLengthError {
             get {
                 return ResourceManager.GetString("StreetLengthError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subsector.
+        /// </summary>
+        public static string SubSectorName {
+            get {
+                return ResourceManager.GetString("SubSectorName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subsectores.
+        /// </summary>
+        public static string Subsectors {
+            get {
+                return ResourceManager.GetString("Subsectors", resourceCulture);
             }
         }
         

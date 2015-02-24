@@ -2157,4 +2157,73 @@
   <data name="AssignedToUserIdRequiredError" xml:space="preserve">
     <value>El usuario al que ha sido asignado el registro es requerido</value>
   </data>
+  <data name="Countries" xml:space="preserve">
+    <value>Países</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="CountryNameLengthError" xml:space="preserve">
+    <value>El nombre del país no puede ser menor a 3, ni mayor a 50 caracteres</value>
+  </data>
+  <data name="CountryNameRequiredError" xml:space="preserve">
+    <value>El nombre del país es requerido</value>
+  </data>
+  <data name="DC_Maestros" xml:space="preserve">
+    <value>DC - Maestros</value>
+  </data>
+  <data name="Localities" xml:space="preserve">
+    <value>Municipios</value>
+  </data>
+  <data name="Regions" xml:space="preserve">
+    <value>Provincias</value>
+  </data>
+  <data name="Subsectors" xml:space="preserve">
+    <value>Subsectores</value>
+  </data>
+  <data name="LocalitiesOfThisRegion" xml:space="preserve">
+    <value>Municipios de esta provincia</value>
+  </data>
+  <data name="RegionsOfThisCountry" xml:space="preserve">
+    <value>Provincias de este país</value>
+  </data>
+  <data name="InstitutionsInThisStatePower" xml:space="preserve">
+    <value>Instituciones en este Poder del Estado</value>
+  </data>
+  <data name="Actions_DeleteConfirmation" xml:space="preserve">
+    <value>¿Está seguro que desea borrar este registro?</value>
+  </data>
+  <data name="LocalityName" xml:space="preserve">
+    <value>Municipio</value>
+  </data>
+  <data name="LocalityNameDescription" xml:space="preserve">
+    <value>Nombre del municipio</value>
+  </data>
+  <data name="LocalityNameLengthError" xml:space="preserve">
+    <value>El nombre del municipio no debe ser menor a 3 ni mayor de 50 caracteres</value>
+  </data>
+  <data name="LocalityNameRequiredError" xml:space="preserve">
+    <value>El nombre del municipio es requerido</value>
+  </data>
+  <data name="RegionName" xml:space="preserve">
+    <value>Provincia</value>
+  </data>
+  <data name="CountryName" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>Región</value>
+  </data>
+  <data name="RegionNameLengthError" xml:space="preserve">
+    <value>El nombre de la provincia debe ser de un mínimo de 3 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="RegionNameRequiredError" xml:space="preserve">
+    <value>El nombre de la provincia es requerido</value>
+  </data>
+  <data name="SectorName" xml:space="preserve">
+    <value>Sector</value>
+  </data>
+  <data name="SubSectorName" xml:space="preserve">
+    <value>Subsector</value>
+  </data>
 </root>

@@ -1,0 +1,111 @@
+﻿@model ORM.DC_Maestros.Country
+
+@{
+    ViewBag.Title = @Localization.es_DO.Actions_Details;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Localization.es_DO.Actions_Details</h2>
+
+<div>
+    <h4>@Localization.es_DO.Country</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CountryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateEntered)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateEntered)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateModified)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateModified)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedByUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedByUserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedByUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedByUserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssignedToUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssignedToUserId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink(@Localization.es_DO.Actions_Edit, "Edit", new { id = Model.CountryId }) |
+    @Html.ActionLink(@Localization.es_DO.Actions_BackToList, "Index")
+</p>
+
+@if (ViewBag.Regions != null)
+{
+
+    <div class="container">
+        <fieldset>
+            <legend>@Localization.es_DO.RegionsOfThisCountry</legend>
+        </fieldset>
+        <table class="table">
+            <tr>
+                <th>
+                    @Localization.es_DO.RegionName
+                </th>
+                <th>
+                    @Localization.es_DO.DateModified
+                </th>
+                <th>
+                    @Localization.es_DO.AssignedToUserId
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in ViewBag.Regions)
+            {
+                <tr>
+                    <td>
+                        <a href="@Url.Action("Details", "Regions", new { id = item.RegionId })">@item.RegionName</a>
+                    </td>
+                    <td>
+                        @item.DateModified
+                    </td>
+                    <td>
+                        @item.AssignedToUserId
+                    </td>
+                    <td>
+                        @Html.ActionLink(@Localization.es_DO.Actions_Edit, "Edit", new { id = @item.RegionId }, new { @class = "btn " })
+                        @Html.ActionLink(@Localization.es_DO.Actions_Delete, "Delete", new { id = @item.RegionId }, new { @class = "btn " })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+}

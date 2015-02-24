@@ -1,0 +1,160 @@
+﻿@model IEnumerable<ORM.DC_Maestros.Institution>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.InstitutionType.InstitutionTypeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Locality.LocalityName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sector.SectorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatePower.StatePowerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubSector.SubSectorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstitutionName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstitutionMission)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstitutionLegalBasis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsInstitutionDescentralized)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsInstitutionDisabled)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstitutionAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstitutionPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstitutionFax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstitutionEmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstitutionUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShouldInstitutionHaveEthicsCommittee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShouldInstitutionHaveOAI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateEntered)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateModified)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedByUserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedByUserId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstitutionType.InstitutionTypeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Locality.LocalityName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sector.SectorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatePower.StatePowerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubSector.SubSectorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstitutionName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstitutionMission)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstitutionLegalBasis)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsInstitutionDescentralized)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsInstitutionDisabled)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstitutionAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstitutionPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstitutionFax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstitutionEmailAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstitutionUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShouldInstitutionHaveEthicsCommittee)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShouldInstitutionHaveOAI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateEntered)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateModified)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedByUserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedByUserId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.InstitutionId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.InstitutionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.InstitutionId })
+        </td>
+    </tr>
+}
+
+</table>

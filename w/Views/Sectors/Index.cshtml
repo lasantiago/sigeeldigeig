@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ORM.DC_Maestros.Sector>
+
+@{
+    ViewBag.Title = @Localization.es_DO.Sectors;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Localization.es_DO.Sectors</h2>
+
+<p>
+    @Html.ActionLink(@Localization.es_DO.Actions_Create, "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SectorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateModified)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssignedToUserId)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <a href="@Url.Action("Details", "Sectors", new { id = @item.SectorId })">@item.SectorName</a>
+            </td>
+            <td>@item.DateModified</td>
+            <td>@item.AssignedToUserId</td>
+            <td>
+                @Html.ActionLink(@Localization.es_DO.Actions_Edit, "Edit", new { id = item.SectorId }) |
+                @Html.ActionLink(@Localization.es_DO.Actions_Delete, "Delete", new { id = item.SectorId })
+            </td>
+        </tr>
+    }
+
+</table>

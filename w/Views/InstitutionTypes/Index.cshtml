@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ORM.DC_Maestros.InstitutionType>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.InstitutionTypeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateModified)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssignedToUserId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            <a href="@Url.Action("Details", "InstitutionTypes", new { id = @item.InstitutionTypeId })">@item.InstitutionTypeName</a>
+        </td>
+        <td>@item.DateModified</td>
+        <td>@item.AssignedToUserId</td>
+        <td>
+            @Html.ActionLink(@Localization.es_DO.Actions_Edit, "Edit", new { id = item.InstitutionTypeId }) |
+            @Html.ActionLink(@Localization.es_DO.Actions_Delete, "Delete", new { id = item.InstitutionTypeId })
+        </td>
+    </tr>
+}
+
+</table>

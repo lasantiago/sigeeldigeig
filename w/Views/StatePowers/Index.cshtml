@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ORM.DC_Maestros.StatePower>
+
+@{
+    ViewBag.Title = @Localization.es_DO.StatePowers;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Localization.es_DO.StatePowers</h2>
+
+<p>
+    @Html.ActionLink(@Localization.es_DO.Actions_Create, "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StatePowerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssignedToUserId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <a href="@Url.Action("Details", "StatePowers", new { id = @item.StatePowerId })">@item.StatePowerName</a>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssignedToUserId)
+        </td>
+        <td>
+            @Html.ActionLink(@Localization.es_DO.Actions_Edit, "Edit", new { id=item.StatePowerId }) |
+            @Html.ActionLink(@Localization.es_DO.Actions_Details, "Details", new { id=item.StatePowerId }) |
+            @Html.ActionLink(@Localization.es_DO.Actions_Delete, "Delete", new { id=item.StatePowerId })
+        </td>
+    </tr>
+}
+
+</table>

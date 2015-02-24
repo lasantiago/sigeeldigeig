@@ -14,9 +14,10 @@ namespace ORM.DC_Maestros
         [Key]
         public Guid LocalityId { get; set; }
 
-        [Required]
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "LocalityNameRequiredError")]
         [DataType(DataType.Text)]
-        [MaxLength(50)]
+        [Display(Name = "LocalityName", ResourceType = typeof(@Localization.es_DO), Description = "LocalityNameDescription")]
+        [StringLength(50, MinimumLength = 3, ErrorMessageResourceType = typeof(@Localization.es_DO), ErrorMessageResourceName = "LocalityNameLengthError")]
         public string LocalityName { get; set; }
 
         [Required]
@@ -43,6 +44,11 @@ namespace ORM.DC_Maestros
         [DataType(DataType.Text)]
         [Display(Name = "ModifiedByUserId", ResourceType = typeof(Localization.es_DO), Description = "ModifiedByUserIdDescription")]
         public Guid ModifiedByUserId { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(Localization.es_DO), ErrorMessageResourceName = "AssignedToUserIdRequiredError")]
+        [DataType(DataType.Text)]
+        [Display(Name = "AssignedToUserId", ResourceType = typeof(Localization.es_DO), Description = "AssignedToUserIdDescription")]
+        public Guid AssignedToUserId { get; set; }
         
         public Locality()
         {
